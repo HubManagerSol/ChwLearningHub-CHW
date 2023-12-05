@@ -51,17 +51,16 @@ function Menu() {
         {/* Main menu */}
         <ul id='Menu' className={`menu ${menuOpen ? 'open' : ''}`}>
           
-          <Link to="/Home"><li> <a href="#">HOME</a> </li> </Link>
-          <Link to="/Error404"><li> <a href="#">ABOUT</a> </li> </Link>
-          <Link to="/Error404"><li> <a href="#">TOPICS</a> </li> </Link>
-          <Link to="/Error404"><li> <a href="#">RESOUCES</a> </li> </Link>
-          <Link to="/Error404"><li> <a href="#">GAMES</a> </li> </Link>
-          <Link to="/Error404"><li> <a href="#">BLOG</a> </li> </Link>
-          <Link to="/Error404"><li> <a href="#">FORUM</a> </li> </Link>
-          <Link to="/Error404"><li> <a href="#">CONTACT</a> </li> </Link>
+          <Link to="/"><li> HOME</li> </Link>
+          <Link to="/Error404"><li> ABOUT</li> </Link>
+          <Link to="/Error404"><li> TOPICS</li> </Link>
+          <Link to="/Error404"><li> RESOURCES </li> </Link>
+          <Link to="/Error404"><li> GAMES </li> </Link>
+          <Link to="/Error404"><li> BLOG </li> </Link>
+          <Link to="/Error404"><li> CONTACT</li> </Link>
           <div className="botnCont">
-          <li><a href="#" id='loguinBottomm' className="login-buttonn">Log In</a></li>
-          <li><a href="#" id='singupBottomm' className="signup-buttonn">Sign Up</a></li>
+          <li><a href="/login" id='loguinBottomm' className="login-buttonn">Log In</a></li>
+          <li><a href="/SingUp" id='singupBottomm' className="signup-buttonn">Sign Up</a></li>
           </div>
         </ul>
           

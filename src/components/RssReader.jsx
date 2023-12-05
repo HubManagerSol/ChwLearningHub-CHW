@@ -12,9 +12,9 @@ function createCard(item) {
   const descriptionText = extractTextFromHtml(descriptionHtml);
 
   const imageMatch = descriptionHtml.match(/<img [^>]*src="([^"]+)"[^>]*>/i);
-  let image = '';
+  let img = '';
   if (imageMatch && imageMatch.length > 1) {
-    image = imageMatch[1];
+    img = imageMatch[1];
   }
 
   return (
@@ -32,8 +32,8 @@ function createCard(item) {
             ...
           </a>
         </div>            
-        {image && (
-          <img src={image} className="cardRSS-img-top" alt="Image" />
+        {img && (
+          <img src={img} className="cardRSS-img-top" alt="Im" />
         )}
       </div>
     </div>

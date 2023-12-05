@@ -145,8 +145,8 @@ header {
 }
 .LanguageSelectorC{
     position: relative;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     font-weight: bold;
     display: flex;  
     flex-direction: row;

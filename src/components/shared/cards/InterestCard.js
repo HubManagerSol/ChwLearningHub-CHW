@@ -1,28 +1,26 @@
 import React from 'react';
 import '../../../styles/Titles.css';
+import Chevron from "./utils/icons/Chevron.svg";
 
-const InterestCard = ({ img, text }) => {
+const InterestCard = ({ img, text,icon }) => {
   return (
     <div>
-      <div className="card my-2" style={{ width: "270px", height: '75px', borderRadius: '10px', borderColor: '#47BBC6' }}>
-        <div className="card-body" style={{ color: '#666665', borderRadius: '10px' }}>
+      <button className="card-button my-2" style={{ width: "430px", height: '90px', borderRadius: '5px', borderColor: '#C6CAD0' }} >
+       
           <div className="row no-gutters"> {/* Cambiado a "no-gutters" para evitar márgenes internos */}
-            <div className="col-4 pr-0">
+            <div className="col-4 mt-2 pr-0">
               <img src={img} alt="interest icon"></img>
             </div>
-            <div className="col-6 mt-2 px-0">
+            <div className="col-6 mt-4 px-0">
               <div className="row">
                 <p className='interest-text'>{text}</p>
               </div>
             </div>
             <div className="col-1 ml-2 mt-3">
-              <div className="row">
-                <img src='react_components/dashboard/src/img/next_icon.svg' alt="next icon"></img>
-              </div>
+                <img src={Chevron} alt="next icon"></img>
             </div>
           </div>
-        </div>
-      </div>
+      </button>
     </div>
   );
 };

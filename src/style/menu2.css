@@ -27,7 +27,7 @@ header {
     display: flex;
     flex-wrap: wrap; /* Los elementos del menú se envuelven en pantallas pequeñas */
     justify-content: flex-end; /* Alinea los elementos al extremo derecho */
-   top: -40px;
+    top: -40px;
     position: relative;
     left: 28%;
     font-size: 12px;
@@ -145,8 +145,8 @@ header {
 }
 .LanguageSelectorC{
     position: relative;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     font-weight: bold;
     display: flex;  
     flex-direction: row;
