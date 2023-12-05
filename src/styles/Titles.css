@@ -1,5 +1,5 @@
 .title-route{
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 30px;
     font-size: 15px;
     font-style: normal;
@@ -31,4 +31,14 @@
     font-style: normal;
     font-weight: 500;
     line-height: 22.5px; 
+    text-align: left;
+  }
+
+  .card-button {
+    background-color: white;
+    border: 1px solid #C6CAD0;
+  }
+
+  .card-button:hover {
+    background-color: #C6CAD0;
   }

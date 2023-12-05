@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles/CustomCheckbox.css'; // Import your custom CSS file
 
 const CustomCheckbox = ({ label, checked, onChange }) => {

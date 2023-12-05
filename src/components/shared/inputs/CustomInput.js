@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles/CustomInput.css'; // Import your custom CSS file
 
 const CustomInput = ({ placeholder, value, onChange }) => {

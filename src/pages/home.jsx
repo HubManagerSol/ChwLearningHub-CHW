@@ -24,7 +24,7 @@ import ImgCard33 from "../img/cardd33:1.png"
 import ImgMain5  from "../img/main5img.jpeg"
 import ImgMain7  from "../img/banner3.png"
 import Footer from "../components/footer"
-import RssReader from "../components/RssReader";
+// import RssReader from "../components/RssReader";
 
 import { Link } from 'react-router-dom';
 
@@ -45,7 +45,7 @@ function Home() {
         Welcome to the <span className="bold-text">CHW Learning Hub</span>
       </h2>
         <p className="text1">We are a free, online resource people can gather information and access important tools.</p>
-        <a href="#" className="learn-More">Learn more</a>
+        <a href="/"  className="learn-More">Learn more</a>
         <SearchBar />
       <div className='divContainerMain1'>
          
@@ -163,10 +163,10 @@ function Home() {
           <h2 className="crea">Create free account</h2>
           <p className="createfreeP">By creating a free account, you will have access to learning materials, print and digital resources, games, and a forum where you can communicate and share stories with other CHWs. We also provide you with a space to build your CHW portfolio where you can keep track of your training hours/certificates. Create an account today to discover even more.</p>
           <button className="createfreeButton">Create account</button>
-          <a className="acountAlready" href="#"> Already a member?</a>
-          <a className="loGin" href="#">Log In</a>
+          <a className="acountAlready" href="/"> Already a member?</a>
+          <a className="loGin" href="/">Log In</a>
         </div>
-          <img className="ImgMain5" src={ImgMain5} href="manimg" />       
+          <img className="ImgMain5" alt="ImgMain5" src={ImgMain5} href="manimg" />       
       </div> 
     <div className="contenedoresCard4">
       <h2 className="h1cardRSS"><b></b></h2>
@@ -179,7 +179,7 @@ function Home() {
 
       <div className="banner2">
       <div className="textBotonsBanner2">
-      <img  className="ImgMain7" src={ImgMain7} href="manimg" />
+      <img  className="ImgMain7" alt="ImgMain5" src={ImgMain7} href="manimg" />
       <div className="inputContainer">
       <h2 className="textBanner">Be the first to learn about the latest tools and information featured on the Hub</h2>
       <input className="inputBanner" type="text" placeholder="Enter email addres" />

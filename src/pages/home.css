@@ -11,7 +11,7 @@
     max-width: 1920px;
 }
 .Appp{
- overflow-x: hidden;
+ /* overflow-x: hidden; */
  max-width: 1320px;
 }
 .main4 {
@@ -35,13 +35,10 @@
 }
 
 .backMain{
-    width: 104%;
-    
+    width: 100%;
     position: relative;
-   left: -14px;
-   top: -450px;
-   transition: 1s;
-
+    top: -450px;
+    transition: 1s;
 }
 
 .Tile1{
@@ -437,14 +434,14 @@ top: -30px;
         top: 600px;
     }
     .Appp{
- overflow-x: hidden;
+ /* overflow-x: hidden; */
  max-width: 1520px;
 }
 }
 
 @media screen and (max-width: 1410px){
     .Appp{
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         max-width: 1520px;
     }
 }
@@ -460,17 +457,21 @@ top: -30px;
 }
 
 @media screen and (max-width: 1920px) {
-    .main6{
+
+    .main6 {
         top: 700px;
     }
-    .Appp{
-        overflow-x: hidden;
+
+    .Appp {
+        overflow-y: hidden;
         max-width: 1750px;
-       }
-    .CardContainer{
+    }
+
+    .CardContainer {
         left: 10%;
     }
-    .main3{
+
+    .main3 {
     width: 110%;
 
     .contenedoresCard4{    

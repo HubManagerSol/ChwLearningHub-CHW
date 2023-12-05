@@ -29,8 +29,8 @@ import imgC6 from "../img/7card.svg";
 const ChwsPromoter = () => {
 
   return (
-    <div style={{ maxWidth:'1920px', overflowX: "hidden", backgroundColor:'white' }}> 
-  <main  id="main1" className="main1">
+    <div style={{ maxWidth:'1920px', overflowX: "hidden",backgroundColor:'white' }}> 
+      <main  id="main1" className="main1" style={{overflowY:"hidden"}}>
 
   <Menu></Menu>
   <div style={{position:"relative", backgroundColor:"transparent", left:'100px', width: '90%', boxSizing: 'border-box',top:"50px" }}>
@@ -42,7 +42,7 @@ const ChwsPromoter = () => {
     
   </div>
 
-  <div style={{ width: '100%', boxSizing: 'border-box',position:"relative", top:"0px", position:"relative", left:"1%" }}>
+  <div style={{ width: '100%', boxSizing: 'border-box',position:"relative", top:"0px", left:"1%" }}>
     <Header/> 
   </div>
 
@@ -115,13 +115,13 @@ const ChwsPromoter = () => {
 </div>
   {/* final cards */}
                 <div className="title-h1-chws my-4" style={{paddingTop: "15px"}}>Featured</div>
-                <div className='Contcard2' style={{display:'flex', flexWrap:'wrap',height:'100vh', alignItems:"center",height:'80vh', width:'70%',backgroundColor:''}} >
+                <div className='Contcard2' style={{display:'flex', flexWrap:'wrap',height:'100vh', alignItems:"center", width:'70%',backgroundColor:''}} >
                 <div className="row" style={{ position:'relative', left:'10%', width:"40%", height:'80vh',  flexWrap:' nowrap',display: "flex", justifyContent: "space-between" }}>
                     <TopicsCard  img={'/mg-2/card5.png'}  title="House of Popular Education" subtitle="Introduction to CHWs/Ps" text="Community Health Workers (CHWs) are recognized leaders and trusted members of the communities where…"/>
                     <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="Popular Education Activities for Awareness Guide" subtitle="Introduction to CHWs/Ps" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
                     <TopicsCard  img={'/mg-2/card5.png'} title="Popular Education Group Icebreakers Guide" subtitle="Introduction to CHWs/Ps" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
                 </div>
-                <div className="row" style={{ position:'relative',  width:"40%", height:'80vh',  flexWrap:' nowrap',display: "flex", justifyContent: "space-between", position:'relative', top:'80%', left:'-27%'}}>
+                <div className="row" style={{ position:'relative',  width:"40%", height:'80vh',  flexWrap:' nowrap',display: "flex", justifyContent: "space-between", top:'80%', left:'-27%'}}>
                     <TopicsCard img={'/mg-2/card5.png'} title="Intro to Cultural Humility" subtitle="Conflict Resolution" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
                     <TopicsCard img={'/mg-2/card5.png'} className="mx-4" title="Conflict Resolution " subtitle="Group Facilitation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
                     <TopicsCard img={'/mg-2/card5.png'} title="Conflict Resolution Diagram" subtitle="Conflict Resolution" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>

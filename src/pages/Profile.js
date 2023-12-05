@@ -40,12 +40,12 @@ const Profile = (props) => {
           Community Education</p>
         </div>
         </div>
-        <img src="https://www.chwlearninghub.org/pix/ico/dash/ico_location.svg" width="29" height="29"></img>
+        <img src="https://www.chwlearninghub.org/pix/ico/dash/ico_location.svg" alt='' width="29" height="29"></img>
         <div>
           <p style={{ fontSize: '15px',  fontWeight: 'bold' , color: '#646464'}}>{cityProfile}</p>
         </div>
         <div style={{ paddingTop:'20px'}}>
-        <img src="https://www.chwlearninghub.org/pix/ico/dash/ico_languages.svg" width="29" height="29" ></img>
+        <img src="https://www.chwlearninghub.org/pix/ico/dash/ico_languages.svg" alt='' width="29" height="29" ></img>
         </div>
         <div>
           <p style={{ fontSize: '15px',  fontWeight: 'bold' , color: '#646464'}}>Language Proficiency <br></br>

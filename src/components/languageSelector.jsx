@@ -16,19 +16,19 @@ function LanguageSelector() {
 
   return (
     <div className="language-selector">
-      <a className='SupportCenter' href="#">Support Center</a>
+      <a className='SupportCenter' href="/">Support Center</a>
       <div className="language-button" onClick={toggleMenu}>
         <img className="icoImg" src="https://www.chwlearninghub.org/images/Ico-Lang.svg" alt="Language Icon"  />
         {selectedLanguage === 'es' ? 'Español' : 'English'}
       </div>
       {menuOpen && (
         <div className="language-menu">
-          <a href="#" onClick={toggleLanguage} className="language-option">
+          <button onClick={toggleLanguage} className="language-option">
             Español
-          </a>
-          <a href="#" onClick={toggleLanguage} className="language-option">
+          </button>
+          <button href="#" onClick={toggleLanguage} className="language-option">
             English
-          </a>
+          </button>
         </div>
       )}
     </div>

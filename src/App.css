@@ -1,6 +1,6 @@
 
 .App{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-color: #FAF5ED;
     max-width: 1720px; /* Establece el ancho máximo para el contenedor principal */
     
