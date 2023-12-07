@@ -233,7 +233,7 @@ const CommunityHealthEducation = () => {
             imageUrl={imgC1}
           />
         </Link>
-        <Link to="/CommunityHealthEducation">
+        <Link to="/CoordinatorsAndSupervisors">
           <Card
             title="Coordinators and Supervisors"   
             imageUrl={imgC3}

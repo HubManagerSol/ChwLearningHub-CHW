@@ -20,10 +20,13 @@ import imgC3 from "../img/3card.svg";
 import imgC4 from "../img/4cart.svg";
 import imgC5 from "../img/6card.svg";
 import imgC6 from "../img/7card.svg";
-import icon_career from "../mg-2/icon_career.svg";
-import introduction_icon from "../mg-2/introduction_icon.svg"
-import pencil_icon from "../mg-2/pencil_icon.svg"
-import roles_icon from "../mg-2/roles_icon.svg"
+import hiring_icon from "../mg-2/hiring_icon.svg"
+import supervision  from "../mg-2/supervision.svg"
+import performance  from "../mg-2/performance.svg"
+import mentorship_icon  from "../mg-2/mentorship_icon.svg"
+import team_icon  from "../mg-2/team_icon.svg"
+import strategic_icon  from "../mg-2/strategic_icon.svg"
+import Pic from "../mg-2/Pic.png"
 
 
 
@@ -44,93 +47,65 @@ const CoordinatorsAndSupervisors = () => {
       </div>
       <div className='row'>
         <div className='col-12'>
-          <p className='title-route'>Home - CHWs / Promotores</p>
+          <p className='title-route'>Home - CHWs / Coordinators and Supervisors</p>
             <div className='col-4'>
-              <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
-              <InterestCard img={icon_career} text='Career Advancement Opportunities' />
+              <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Recruitment and Interviewing </h1>
+              <InterestCard img={hiring_icon} text='Hiring and Retention ' />
           </div>
 
           <div className='row'>
-            <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Community Health Workers Philosophy</h1>
+            <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Supervision and Performance Appraisals</h1>
             <div className="col-4">
-              <InterestCard img={introduction_icon} text='Introduction to CHW/Ps' style={{ marginRight: '10px' }} />
+              <InterestCard img={supervision} text='Supervision ' style={{ marginRight: '10px' }} />
             </div>
             <div className="col-4">
-              <InterestCard img={pencil_icon} text='Popular Education' style={{ marginRight: '10px' }} />
+              <InterestCard img={performance} text='Performance ' style={{ marginRight: '10px' }} />
             </div>
-            <div className="col-4 mb-4">
-              <InterestCard img={roles_icon} text='Roles & Core Competencies C3' />
-            </div>
-            </div>
+          </div>
         <div>
-          <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Personal and Professional Development</h1>
+          <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Mentorship</h1>
         </div>
         <div className="row">
           <div className="col-sm-4">
-            <InterestCard img={'/mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
+            <InterestCard img={mentorship_icon} text='Mentorship and Motivation' style={{ marginRight: '10px' }} />
           </div>
+        </div>
+        <div>
+          <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Team Management</h1>
+        </div>
+        <div className="row">
           <div className="col-sm-4">
-            <InterestCard img={'/mg-2/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
+            <InterestCard img={team_icon} text='Team Building and Management' style={{ marginRight: '10px' }} />
           </div>
+        </div>
+        <div>
+          <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Planning and Evaluation</h1>
+        </div>
+        <div className="row">
           <div className="col-sm-4">
-            <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
+            <InterestCard img={strategic_icon} text='Strategic Action Planning and Evaluation' style={{ marginRight: '10px' }} />
           </div>
         </div>
-      <div className="row">
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-4">
-          <InterestCard img={'../mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
-        </div>
-      </div>
-      <div>
-        <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
-      </div>
-      <div className="row">
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
-        </div>
-      </div>
     {/* final cards */}
       <div className="title-h1-chws my-4" style={{paddingTop: "15px"}}>Featured</div>
         <div className="row">
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'}  title="Who are Community Health Workers?" subtitle="Introduction to CHWs/Ps" text="Community Health Workers (CHWs) are trusted members of the communities where they live..."/>
+            <TopicsCard  img={Pic}  title="Job Description Example" subtitle="Hiring and Retention" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="What is a CHW?" subtitle="Roles & Core Competencies C3" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+            <TopicsCard  img={Pic} className="mx-4" title="Types of Supervision" subtitle="Supervision" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'} title="Qualities of a CHW (Part 2)" subtitle="Roles & Core Competencies C3" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+            <TopicsCard  img={Pic} title="Appraisal/Evaluation/Professional Development" subtitle="Performance Appraisals" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'}  title="House of Popular Education " subtitle="Popular Education" text="Community Health Workers (CHWs) are trusted members of the communities where they live..."/>
+            <TopicsCard  img={Pic}  title="The Grow Model of Mentorship and Motivation " subtitle="Mentorship and Motivation" text="Community Health Workers (CHWs) are trusted members of the communities where they live..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="Popular Education Activities for Awareness" subtitle="Popular Education" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+            <TopicsCard  img={Pic} className="mx-4" title="Professional Boundaries Worksheet Template" subtitle="Team Building and Management" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'} title="What is a facilitator?" subtitle="Group Facilitation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+            <TopicsCard  img={Pic} title="Strategic Action Plan Example" subtitle="Strategic Action Planning and Evaluation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
         </div>
       </div>
