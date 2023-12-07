@@ -45,7 +45,7 @@
 
   .subtitle {
     color: var(--Azul-Secundario, #067CBC);
-    font-family: Proxima Nova;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
