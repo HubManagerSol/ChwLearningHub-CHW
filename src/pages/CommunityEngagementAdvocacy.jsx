@@ -21,10 +21,8 @@ import imgC3 from "../img/3card.svg";
 import imgC4 from "../img/4cart.svg";
 import imgC5 from "../img/6card.svg";
 import imgC6 from "../img/7card.svg";
-import icon_career from "../mg-2/icon_career.svg";
 import introduction_icon from "../mg-2/introduction_icon.svg"
 import pencil_icon from "../mg-2/pencil_icon.svg"
-import roles_icon from "../mg-2/roles_icon.svg"
 
 
 
