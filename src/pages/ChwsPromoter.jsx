@@ -24,9 +24,16 @@ import icon_career from "../mg-2/icon_career.svg";
 import introduction_icon from "../mg-2/introduction_icon.svg"
 import pencil_icon from "../mg-2/pencil_icon.svg"
 import roles_icon from "../mg-2/roles_icon.svg"
-
-
-
+import icon_group from "../mg-2/icon-group.svg"
+import professional_icon from "../mg-2/professional_icon.svg"
+import cultural_icon from "../mg-2/cultural_icon.svg"
+import self_care_icon from "../mg-2/self_care_icon.svg"
+import emotional_intelligence_icon from "../mg-2/emotional_intelligence_icon.svg"
+import leadership_icon from "../mg-2/leadership_icon.svg"
+import time_managment_icon from "../mg-2/time_managment_icon.svg"
+import stress_icon from "../mg-2/stress_icon.svg"
+import community_icon from "../mg-2/community_icon.svg"
+import communication_icon from "../mg-2/communication_icon.svg"
 
 
 const ChwsPromoter = () => {
@@ -48,7 +55,7 @@ const ChwsPromoter = () => {
             <div className='col-4'>
               <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
               <InterestCard img={icon_career} text='Career Advancement Opportunities' />
-          </div>
+            </div>
 
           <div className='row'>
             <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Community Health Workers Philosophy</h1>
@@ -67,48 +74,40 @@ const ChwsPromoter = () => {
         </div>
         <div className="row">
           <div className="col-sm-4">
-            <InterestCard img={'/mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
+            <InterestCard img={icon_group} text='Group Facilitation Communication' style={{ marginRight: '10px' }} />
           </div>
           <div className="col-sm-4">
-            <InterestCard img={'/mg-2/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
+            <InterestCard img={professional_icon} text='Professional Development' style={{ marginRight: '10px' }} />
           </div>
           <div className="col-sm-4">
-            <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
+            <InterestCard img={cultural_icon} text='Cultural Humility' />
           </div>
         </div>
       <div className="row">
         <div className="col-sm-4">
-          <InterestCard img={'/mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
+          <InterestCard img={self_care_icon} text='Self care' style={{ marginRight: '10px' }} />
         </div>
         <div className="col-sm-4">
-          <InterestCard img={'/mg-2/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
+          <InterestCard img={emotional_intelligence_icon} text='Emotional Intelligence' style={{ marginRight: '10px' }} />
         </div>
         <div className="col-sm-4">
-          <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-4">
-          <InterestCard img={'../mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
+          <InterestCard img={leadership_icon} text='Leadership' />
         </div>
       </div>
       <div className="row">
         <div className="col-sm-4">
-          <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
+          <InterestCard img={time_managment_icon} text='Time Managment' style={{ marginRight: '10px' }} />
         </div>
-      </div>
-      <div>
-        <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
+        <div className="col-sm-4">
+          <InterestCard img={stress_icon} text='Stress Management' style={{ marginRight: '10px' }} />
+        </div>
+        <div className="col-sm-4">
+          <InterestCard img={community_icon} text='Community Outreach & Safety' />
+        </div>
       </div>
       <div className="row">
         <div className="col-sm-4">
-          <InterestCard img={'/mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
+          <InterestCard img={communication_icon} text='Communication' />
         </div>
       </div>
     {/* final cards */}
