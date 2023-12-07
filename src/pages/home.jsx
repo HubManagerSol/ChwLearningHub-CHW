@@ -56,8 +56,7 @@ function Home() {
           />
         </div>
         
-      
-
+    
         <div id="CardContainer" className="CardContainer">
         <h2 className="title2">Browse by Topic</h2>
         <Link to="/chws-promoter">
