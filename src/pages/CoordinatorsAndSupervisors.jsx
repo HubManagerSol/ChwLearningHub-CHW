@@ -40,7 +40,7 @@ const CoordinatorsAndSupervisors = () => {
         <SearchBar2 />
       </div>
       <div style={{ width: '100%', boxSizing: 'border-box',position:"relative" }}>
-        <Header/> 
+      <Header  imageUrl="/mg-2/header.png"/> 
       </div>
       <div className='row'>
         <div className='col-12'>

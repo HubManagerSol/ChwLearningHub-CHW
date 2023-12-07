@@ -1,11 +1,18 @@
-import {} from '../../styles/Header.css'; 
+import React from 'react';
+import PropTypes from 'prop-types';
+import {} from '../../styles/Header.css';
 
-const HeaderPages = () => {
+const HeaderPages = ({ imageUrl }) => {
   return (
-      <div>
-        <img src="/mg-2/header.png" alt="img" style={{ width: '1440px' }} />
-      </div>  
+    <div>
+      <img src={imageUrl} alt="img" style={{ width: '1440px' }} />
+    </div>
   );
 }
 
+HeaderPages.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+};
+
 export default HeaderPages;
+

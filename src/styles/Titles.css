@@ -42,3 +42,12 @@
   .card-button:hover {
     background-color: #F9F9F9;
   }
+
+  .subtitle {
+    color: var(--Azul-Secundario, #067CBC);
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.5px; /* 125% */
+  }

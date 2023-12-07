@@ -19,7 +19,6 @@ import imgC3 from "../img/3card.svg";
 import imgC4 from "../img/4cart.svg";
 import imgC5 from "../img/6card.svg";
 import imgC6 from "../img/7card.svg";
-import Banner from "../img/Banner.png";
 import chronic_icon from "../mg-2/chronic_icon.svg"
 import cancer_icon from "../mg-2/cancer_icon.svg"
 import heart_icon from "../mg-2/heart_icon.svg"
@@ -51,6 +50,7 @@ import oral_children_icon from "../mg-2/oral_children_icon.svg"
 import postpartum_icon from "../mg-2/postpartum_icon.svg"
 import sexually_transmitted_icon from "../mg-2/sexually_transmitted_icon.svg"
 import Pic from "../mg-2/Pic.png"
+import banner from "../mg-2/Banner.png"
 
 
 
@@ -65,7 +65,7 @@ const CommunityHealthEducation = () => {
         <SearchBar2 />
       </div>
       <div style={{ width: '100%', boxSizing: 'border-box',position:"relative" }}>
-        <img src={Banner} alt="img" style={{ width: '1440px', height:'450px' }} />
+        <img src={banner} alt="img" style={{ width: '1440px', height:"450px" }} />
       </div>
       <div className='row'>
         <div className='row'>

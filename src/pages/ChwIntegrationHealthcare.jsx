@@ -25,13 +25,12 @@ import imgC6 from "../img/7card.svg";
 import icon_career from "../mg-2/icon_career.svg";
 import introduction_icon from "../mg-2/introduction_icon.svg"
 import pencil_icon from "../mg-2/pencil_icon.svg"
-import roles_icon from "../mg-2/roles_icon.svg"
 
 
 
 
 
-const AgenciesAndOrganizations = () => {
+const ChwIntegrationHealthcare = () => {
 
   return (
     <div style={{ maxWidth:'1920px',  backgroundColor:'white' }}> 
@@ -42,97 +41,101 @@ const AgenciesAndOrganizations = () => {
         <SearchBar2 />
       </div>
       <div style={{ width: '100%', boxSizing: 'border-box',position:"relative" }}>
-        <Header/> 
+      <Header  imageUrl="/mg-2/header.png"/> 
       </div>
       <div className='row'>
         <div className='col-12'>
-          <p className='title-route'>Home - CHWs / Promotores</p>
+          <p className='title-route'>Home - CHWs / CHW Integration into Healthcare</p>
             <div className='col-4'>
-              <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
-              <InterestCard img={icon_career} text='Career Advancement Opportunities' />
+              <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Defining Clinical Teams and Health Care Teams</h1>
+              <InterestCard img={icon_career} text='CHWs and Clinical Care Teams' />
           </div>
 
           <div className='row'>
-            <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Community Health Workers Philosophy</h1>
+            <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW Role in Care Teams</h1>
             <div className="col-4">
-              <InterestCard img={introduction_icon} text='Introduction to CHW/Ps' style={{ marginRight: '10px' }} />
+              <InterestCard img={introduction_icon} text='The Essence and Role of CHWs' style={{ marginRight: '10px' }} />
             </div>
             <div className="col-4">
-              <InterestCard img={pencil_icon} text='Popular Education' style={{ marginRight: '10px' }} />
-            </div>
-            <div className="col-4 mb-4">
-              <InterestCard img={roles_icon} text='Roles & Core Competencies C3' />
+              <InterestCard img={pencil_icon} text='CHWs Role as a Professional
+Health Worker in a Care Team' style={{ marginRight: '10px' }} />
             </div>
             </div>
         <div>
-          <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Personal and Professional Development</h1>
+          <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW Role Delineation in Care Teams</h1>
         </div>
         <div className="row">
           <div className="col-sm-4">
-            <InterestCard img={'/mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
+            <InterestCard img={'/mg-2/resume.svg'} text='CHW Role and Clinical
+Staff Role' style={{ marginRight: '10px' }} />
           </div>
           <div className="col-sm-4">
-            <InterestCard img={'/mg-2/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-          </div>
-          <div className="col-sm-4">
-            <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
+            <InterestCard img={'/mg-2/message_icon.svg'} text='Bidirectional and Vertical
+Approaches in Health Aare' style={{ marginRight: '10px' }} />
           </div>
         </div>
-      <div className="row">
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-4">
-          <InterestCard img={'../mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-        </div>
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/schedule_icon.svg'} text='Schedule' />
-        </div>
-      </div>
       <div>
-        <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
+        <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Principles and Elements of CHW integration</h1>
       </div>
       <div className="row">
-        <div className="col-sm-4">
-          <InterestCard img={'/mg-2/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
+          <div className="col-sm-4">
+            <InterestCard img={'/mg-2/resume.svg'} text='Principles for CHW integration ' style={{ marginRight: '10px' }} />
+          </div>
+          <div className="col-sm-4">
+            <InterestCard img={'/mg-2/message_icon.svg'} text='Elements of CHW
+implementation' style={{ marginRight: '10px' }} />
+          </div>
         </div>
+
+        <div>
+        <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Scope of Practice for CHW integration</h1>
       </div>
-    {/* final cards */}
+      <div className="row">
+          <div className="col-sm-4">
+            <InterestCard img={'/mg-2/resume.svg'} text='CHW Scope of Practice' style={{ marginRight: '10px' }} />
+          </div>
+          <div className="col-sm-4">
+            <InterestCard img={'/mg-2/message_icon.svg'} text='CHW services
+and interventions ' style={{ marginRight: '10px' }} />
+          </div>
+        </div>
+
+        <div>
+        <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Organizational Readiness</h1>
+      </div>
+      <div className="row">
+          <div className="col-sm-4">
+            <InterestCard img={'/mg-2/resume.svg'} text='CHW integration barriers
+and solutions ' style={{ marginRight: '10px' }} />
+          </div>
+          <div className="col-sm-4">
+            <InterestCard img={'/mg-2/message_icon.svg'} text='CHW plan for assessments, 
+documentation and supervision' style={{ marginRight: '10px' }} />
+          </div>
+        </div>
+
       <div className="title-h1-chws my-4" style={{paddingTop: "15px"}}>Featured</div>
-        <div className="row">
+      <div className="row">
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'}  title="Who are Community Health Workers?" subtitle="Introduction to CHWs/Ps" text="Community Health Workers (CHWs) are trusted members of the communities where they live..."/>
+            <TopicsCard  img={'/mg-2/card5.png'}  title="The role of CHW" subtitle="Hiring and Retention" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="What is a CHW?" subtitle="Roles & Core Competencies C3" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+            <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="Tips for recruiting and
+interviewing CHWs" subtitle="Supervision " text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'} title="Qualities of a CHW (Part 2)" subtitle="Roles & Core Competencies C3" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+            <TopicsCard  img={'/mg-2/card5.png'} title="Community satisfaction tip sheet" subtitle="Performance Appraisals" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'}  title="House of Popular Education " subtitle="Popular Education" text="Community Health Workers (CHWs) are trusted members of the communities where they live..."/>
+            <TopicsCard  img={'/mg-2/card5.png'}  title="Evaluation tools for CHW
+supervisors" subtitle="Management" text="Community Health Workers (CHWs) are trusted members of the communities where they live..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="Popular Education Activities for Awareness" subtitle="Popular Education" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+            <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="Professional Boundaries 
+Worksheet Template" subtitle="Team Building and Management " text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
           <div className="col-sm-4">
-            <TopicsCard  img={'/mg-2/card5.png'} title="What is a facilitator?" subtitle="Group Facilitation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+            <TopicsCard  img={'/mg-2/card5.png'} title="Strategic Action Plan Example" subtitle="Strategic Action Planning and Evaluation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
           </div>
         </div>
       </div>
@@ -184,4 +187,4 @@ const AgenciesAndOrganizations = () => {
   );
 };
 
-export default AgenciesAndOrganizations;
+export default ChwIntegrationHealthcare;
