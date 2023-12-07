@@ -13,8 +13,12 @@ function Card(props) {
 
   return (
     <div id="card1H" className="card1H" onClick={handleClick}>
-      <img src={imageUrl} alt={title} />
-      <h2>{title}</h2>
+      <div className='col-12'>
+        <img src={imageUrl} alt={title} />
+      </div>
+      <div className='col-12'>
+       <h2>{title}</h2>
+      </div>
     </div>
   );
 }

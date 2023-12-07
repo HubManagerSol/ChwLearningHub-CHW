@@ -5,9 +5,9 @@ import Chevron from "./utils/icons/Chevron.svg";
 const InterestCard = ({ img, text,icon }) => {
   return (
     <div>
-      <button className="card-button my-2" style={{ width: "430px", height: '90px', borderRadius: '5px', borderColor: '#C6CAD0' }} >
+      <button className="card-button my-2" style={{ width: "463px", height: '120px', borderRadius: '5px', borderColor: '#C6CAD0' }} >
        
-          <div className="row no-gutters"> {/* Cambiado a "no-gutters" para evitar márgenes internos */}
+          <div className="row "> {/* Cambiado a "no-gutters" para evitar márgenes internos */}
             <div className="col-4 mt-2 pr-0">
               <img src={img} alt="interest icon"></img>
             </div>

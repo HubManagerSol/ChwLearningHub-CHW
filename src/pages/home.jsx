@@ -84,16 +84,18 @@ function Home() {
         imageUrl={imgC4}
       />
       </Link>
-       <Link to="/ChwIntegrationHealthcare">
+      <Link to="/ChwIntegrationHealthcare">
        <Card
         title="CHW integration into Healthcare"   
         imageUrl={imgC5}
       />
       </Link>
-      <Card
-        title="Engagement and Advocacy"   
-        imageUrl={imgC6}
-      />
+      <Link to="/CommunityEngagementAdvocacy">
+        <Card
+          title="Engagement and Advocacy"   
+          imageUrl={imgC6}
+        />
+      </Link>
       </div>
       <div id="main2" className="main2">
         <h2 className="titleMain2"> Filter by Resource Type</h2>
