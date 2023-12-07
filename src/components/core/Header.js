@@ -1,6 +1,6 @@
 import {} from '../../styles/Header.css'; 
 
-const Header = () => {
+const HeaderPages = () => {
   return (
       <div>
         <img src="/mg-2/header.png" alt="img" style={{ width: '1440px' }} />
@@ -8,4 +8,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default HeaderPages;

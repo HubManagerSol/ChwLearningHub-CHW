@@ -28,7 +28,11 @@ img.rounded-circle {
   
   .title-h1{
     color: #143F6A;
-    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 25.63px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.834px;
   }
 
   .title-h1-chws{
@@ -52,4 +56,15 @@ img.rounded-circle {
     z-index: 1;
     top: 165px;
     left: 10px;
+  }
+
+  .subtitle {
+    color: var(--Azul-Secundario, #067CBC);
+
+    /* Links */
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.5px; /* 125% */
   }

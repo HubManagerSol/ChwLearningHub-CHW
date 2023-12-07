@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {} from '../styles/Titles.css'
 import '../components/shared/buttons/Button'; 
 import '../components/shared/buttons/ButtonSkills'; 
 import {  } from "../styles/Profile.css";
@@ -10,7 +11,7 @@ import TopicsCard from '../components/shared/cards/TopicsCard'
 import {} from '../styles/Header.css'
 import {} from '../styles/Titles.css'
 import Menu from '../components/menu2';
-import {  } from "../pages/home";
+import {  } from "./home";
 import SearchBar2 from "../components/searchbar2";
 import Footer from '../components/footer';
 import Card from '../components/cards1';
@@ -29,7 +30,7 @@ import roles_icon from "../mg-2/roles_icon.svg"
 
 
 
-const CoordinatorsAndSupervisors = () => {
+const CommunityEngagementAdvocacy = () => {
 
   return (
     <div style={{ maxWidth:'1920px',  backgroundColor:'white' }}> 
@@ -182,4 +183,4 @@ const CoordinatorsAndSupervisors = () => {
   );
 };
 
-export default CoordinatorsAndSupervisors;
+export default CommunityEngagementAdvocacy;

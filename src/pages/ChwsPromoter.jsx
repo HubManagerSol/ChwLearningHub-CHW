@@ -14,7 +14,7 @@ import {  } from "../pages/home";
 import SearchBar2 from "../components/searchbar2";
 import Footer from '../components/footer';
 import Card from '../components/cards1';
-import imgC1 from "../img/1racard.svg";
+// import imgC1 from "../img/1racard.svg";
 import imgC2 from "../img/2card.svg";
 import imgC3 from "../img/3card.svg";
 import imgC4 from "../img/4cart.svg";
@@ -45,26 +45,25 @@ const ChwsPromoter = () => {
       <div className='row'>
         <div className='col-12'>
           <p className='title-route'>Home - CHWs / Promotores</p>
-          <div className="row mb-4">
-            <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
-            <div className="col-sm-4 mb-4">
+            <div className='col-4'>
+              <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
               <InterestCard img={icon_career} text='Career Advancement Opportunities' />
+          </div>
+
+          <div className='row'>
+            <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Community Health Workers Philosophy</h1>
+            <div className="col-4">
+              <InterestCard img={introduction_icon} text='Introduction to CHW/Ps' style={{ marginRight: '10px' }} />
             </div>
-          </div>
-        <div className="row ">
-          <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>CHW/Promotor Philosophy</h1>
-          <div className="col-sm-4">
-            <InterestCard img={introduction_icon} text='Introduction to CHW/Ps' style={{ marginRight: '10px' }} />
-          </div>
-          <div className="col-sm-4">
-            <InterestCard img={pencil_icon} text='Popular Education' style={{ marginRight: '10px' }} />
-          </div>
-          <div className="col-sm-4 mb-4">
-            <InterestCard img={roles_icon} text='Roles & Core Competencies C3' />
-          </div>
-        </div>
+            <div className="col-4">
+              <InterestCard img={pencil_icon} text='Popular Education' style={{ marginRight: '10px' }} />
+            </div>
+            <div className="col-4 mb-4">
+              <InterestCard img={roles_icon} text='Roles & Core Competencies C3' />
+            </div>
+            </div>
         <div>
-          <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>Personal and Professional Development</h1>
+          <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Personal and Professional Development</h1>
         </div>
         <div className="row">
           <div className="col-sm-4">
@@ -105,7 +104,7 @@ const ChwsPromoter = () => {
         </div>
       </div>
       <div>
-        <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
+        <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
       </div>
       <div className="row">
         <div className="col-sm-4">
@@ -114,61 +113,67 @@ const ChwsPromoter = () => {
       </div>
     {/* final cards */}
       <div className="title-h1-chws my-4" style={{paddingTop: "15px"}}>Featured</div>
-      <div className='Contcard2' style={{display:'flex', flexWrap:'wrap',height:'100vh', alignItems:"center", width:'70%',backgroundColor:''}} >
-        <div className="row" style={{ position:'relative', left:'10%', width:"40%", height:'80vh',  flexWrap:' nowrap',display: "flex", justifyContent: "space-between" }}>
-            <TopicsCard  img={'/mg-2/card5.png'}  title="House of Popular Education" subtitle="Introduction to CHWs/Ps" text="Community Health Workers (CHWs) are recognized leaders and trusted members of the communities where…"/>
-            <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="Popular Education Activities for Awareness Guide" subtitle="Introduction to CHWs/Ps" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
-            <TopicsCard  img={'/mg-2/card5.png'} title="Popular Education Group Icebreakers Guide" subtitle="Introduction to CHWs/Ps" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
-        </div>
-        <div className="row" style={{ position:'relative',  width:"40%", height:'80vh',  flexWrap:' nowrap',display: "flex", justifyContent: "space-between", top:'80%', left:'-27%'}}>
-            <TopicsCard img={'/mg-2/card5.png'} title="Intro to Cultural Humility" subtitle="Conflict Resolution" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
-            <TopicsCard img={'/mg-2/card5.png'} className="mx-4" title="Conflict Resolution " subtitle="Group Facilitation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
-            <TopicsCard img={'/mg-2/card5.png'} title="Conflict Resolution Diagram" subtitle="Conflict Resolution" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
-        </div>
-      </div>     
-      </div>
-      </div>
-          
+        <div className="row">
+          <div className="col-sm-4">
+            <TopicsCard  img={'/mg-2/card5.png'}  title="Who are Community Health Workers?" subtitle="Introduction to CHWs/Ps" text="Community Health Workers (CHWs) are trusted members of the communities where they live..."/>
           </div>
-        <div style={{width:'80%', height:"52vh", backgroundColor:'#F9F9F9', borderRadius:'10px',  position:"relative", top:'400px', left:'13%'}}>
-        <div className="title-h1-chws my-4" style={{paddingTop: "390px"}}></div>
-        <div className='cardTopycss' style={{position:'relative', top:'-180px', height:'80%', left:'0%'}}>
-  <Link to="/chws-promoter">
-              <Card
-                title="CHW's/ promotores"   
-                imageUrl={imgC1}
-              />
-            </Link>
-            <Link to="/CommunityHealthEducation">
-        <Card
-          title="Community Health Education"   
-          imageUrl={imgC2}
-        />
+          <div className="col-sm-4">
+            <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="What is a CHW?" subtitle="Roles & Core Competencies C3" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+          </div>
+          <div className="col-sm-4">
+            <TopicsCard  img={'/mg-2/card5.png'} title="Qualities of a CHW (Part 2)" subtitle="Roles & Core Competencies C3" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+          </div>
+          <div className="col-sm-4">
+            <TopicsCard  img={'/mg-2/card5.png'}  title="House of Popular Education " subtitle="Popular Education" text="Community Health Workers (CHWs) are trusted members of the communities where they live..."/>
+          </div>
+          <div className="col-sm-4">
+            <TopicsCard  img={'/mg-2/card5.png'} className="mx-4" title="Popular Education Activities for Awareness" subtitle="Popular Education" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+          </div>
+          <div className="col-sm-4">
+            <TopicsCard  img={'/mg-2/card5.png'} title="What is a facilitator?" subtitle="Group Facilitation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec..."/>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+      </div>
+      <div style={{width:'1440px',marginLeft: '30px', backgroundColor:'#F9F9F9', borderRadius:'10px',  position:"relative", top:'80px', left:'4%'}}>
+      <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold', marginLeft:"30px"}}>Other topics to explore</h1>
+      <div className='row' style={{}}>
+      <div className='col-12' style={{}}>
+      <Link to="/CommunityHealthEducation">
+          <Card
+            title="Community Health Education"   
+            imageUrl={imgC2}
+          />
+        </Link>
+        <Link to="/CommunityHealthEducation">
+          <Card
+            title="Coordinators and Supervisors"   
+            imageUrl={imgC3}
+          />
         </Link>
         <Link to="/CoordinatorsAndSupervisors">
-        <Card
-          title="Coordinators and Supervisors"   
-          imageUrl={imgC3}
-        />
-        </Link>
-        <Link to="/AgenciesAndOrganizations">
-        <Card
-          title="Agencies and Organizations"   
-          imageUrl={imgC4}
-        />
+          <Card
+            title="Agencies and Organizations"   
+            imageUrl={imgC4}
+          />
         </Link>
         <Link to="/ChwIntegrationHealthcare">
-        <Card
-          title="CHW integration into Healthcare"   
-          imageUrl={imgC5}
-        />
+          <Card
+            title="CHW into Healthcare"   
+            imageUrl={imgC5}
+          />
         </Link>
-        <Card
-          title="Engagement and Advocacy"   
-          imageUrl={imgC6}
-        />
-        </div>
-        </div>
+        <Link to="/ChwIntegrationHealthcare">
+          <Card
+            title="Community Engagement and Advocacy"   
+            imageUrl={imgC6}
+          />
+        </Link>
+      </div>
+      </div>
+      </div>
           </main>
           <div style={{position:'relative', top:'450px', backgroundColor:'#003d6a'}}>
               <Footer />
