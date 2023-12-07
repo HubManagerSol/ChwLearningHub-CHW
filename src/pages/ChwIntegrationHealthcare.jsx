@@ -16,7 +16,7 @@ import {  } from "./home";
 import SearchBar2 from "../components/searchbar2";
 import Footer from '../components/footer';
 import Card from '../components/cards1';
-// import imgC1 from "../img/1racard.svg";
+import imgC1 from "../img/1racard.svg";
 import imgC2 from "../img/2card.svg";
 import imgC3 from "../img/3card.svg";
 import imgC4 from "../img/4cart.svg";
@@ -41,7 +41,7 @@ const ChwIntegrationHealthcare = () => {
         <SearchBar2 />
       </div>
       <div style={{ width: '100%', boxSizing: 'border-box',position:"relative" }}>
-      <Header  imageUrl="/mg-2/header.png"/> 
+      <Header  imageUrl="/mg-2/heltyy.png"/> 
       </div>
       <div className='row'>
         <div className='col-12'>
@@ -146,13 +146,13 @@ Worksheet Template" subtitle="Team Building and Management " text="Lorem ipsum d
       <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold', marginLeft:"30px"}}>Other topics to explore</h1>
       <div className='row' style={{}}>
       <div className='col-12' style={{}}>
-      <Link to="/CommunityHealthEducation">
+        <Link to="/chws-promoter">
           <Card
-            title="Community Health Education"   
-            imageUrl={imgC2}
+            title="CHW's/ promotores"
+            imageUrl={imgC1}
           />
         </Link>
-        <Link to="/CommunityHealthEducation">
+        <Link to="/CoordinatorsAndSupervisors">
           <Card
             title="Coordinators and Supervisors"   
             imageUrl={imgC3}
@@ -170,7 +170,7 @@ Worksheet Template" subtitle="Team Building and Management " text="Lorem ipsum d
             imageUrl={imgC5}
           />
         </Link>
-        <Link to="/ChwIntegrationHealthcare">
+        <Link to="/CommunityEngagementAdvocacy">
           <Card
             title="Community Engagement and Advocacy"   
             imageUrl={imgC6}

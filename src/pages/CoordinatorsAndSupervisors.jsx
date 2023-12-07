@@ -140,7 +140,7 @@ const CoordinatorsAndSupervisors = () => {
             imageUrl={imgC5}
           />
         </Link>
-        <Link to="/ChwIntegrationHealthcare">
+        <Link to="/CommunityEngagementAdvocacy">
           <Card
             title="Community Engagement and Advocacy"   
             imageUrl={imgC6}
