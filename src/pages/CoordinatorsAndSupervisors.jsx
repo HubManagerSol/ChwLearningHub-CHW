@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import '../components/shared/buttons/Button'; 
 import '../components/shared/buttons/ButtonSkills'; 
 import {  } from "../styles/Profile.css";
-import Header from '../components/core/Header';
 import InterestCard from '../components/shared/cards/InterestCard'
 import TopicsCard from '../components/shared/cards/TopicsCard'
 import {} from '../styles/Header.css'
@@ -27,6 +26,7 @@ import mentorship_icon  from "../mg-2/mentorship_icon.svg"
 import team_icon  from "../mg-2/team_icon.svg"
 import strategic_icon  from "../mg-2/strategic_icon.svg"
 import Pic from "../mg-2/Pic.png"
+import banner from "../mg-2/Banner2.png"
 
 
 
@@ -43,11 +43,11 @@ const CoordinatorsAndSupervisors = () => {
         <SearchBar2 />
       </div>
       <div style={{ width: '100%', boxSizing: 'border-box',position:"relative" }}>
-      <Header  imageUrl="/mg-2/header.png"/> 
+      <img src={banner} alt="img" style={{ width: '1440px', height:"450px" }} />
       </div>
       <div className='row'>
         <div className='col-12'>
-          <p className='title-route'>Home - CHWs / Coordinators and Supervisors</p>
+          <p className='title-route'>Home  / Coordinators and Supervisors</p>
             <div className='col-4'>
               <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Recruitment and Interviewing </h1>
               <InterestCard img={hiring_icon} text='Hiring and Retention ' />

@@ -51,7 +51,7 @@ const ChwsPromoter = () => {
       </div>
       <div className='row'>
         <div className='col-12'>
-          <p className='title-route'>Home - CHWs / Promotores</p>
+          <p className='title-route'>Home / Community Health Workers</p>
             <div className='col-4'>
               <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
               <InterestCard img={icon_career} text='Career Advancement Opportunities' />
