@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // Import the CSS file for styling (make sure to adjust the path as needed)
 import '../style/menu.css';
+import LoginForm from './logginForm';
 
 // Import the image for the logo (adjust the path accordingly)
 import ElSol from "../img/CHWLearningHUB_Logo.png"
@@ -15,6 +16,7 @@ import ElSol from "../img/CHWLearningHUB_Logo.png"
 function Menu() {
   
 
+
   
   // Use the 'useState' hook to manage the 'menuOpen' state
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +25,28 @@ function Menu() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  const handleOpenPopup = () => {
+    console.log('Abriendo popup...');
+    // Lógica adicional al abrir el popup
+  };
 
+  const handleClosePopup = () => {
+    console.log('Cerrando popup...');
+    // Lógica adicional al cerrar el popup
+  };
+
+  const buttonStyle = {
+    // Estilos personalizados para el botón
+    backgroundColor: 'blue',
+    color: 'white',
+    // ... otros estilos
+  };
+
+  const validUsersData = {
+    "WebDevelopers23": "ElSolNec"
+
+    // ... otros usuarios y contraseñas
+  };
   // Render the header component
   return (
     <header>
@@ -59,8 +82,19 @@ function Menu() {
           <Link to="/Error404"><li> BLOG </li> </Link>
           <Link to="/Error404"><li> CONTACT</li> </Link>
           <div className="botnCont">
+
           <li><a href="/login" id='loguinBottomm' className="login-buttonn">Log In</a></li>
           <li><a href="/SingUp" id='singupBottomm' className="signup-buttonn">Sign Up</a></li>
+
+          <div className='loginCont'>
+      <LoginForm
+        onOpenPopup={handleOpenPopup}
+        onClosePopup={handleClosePopup}
+        buttonStyle={buttonStyle}
+        validUsersData={validUsersData}
+      />
+      </div>   <li><a href="#" id='singupBottomm' className="signup-buttonn">Sign Up</a></li>
+ (loguin)
           </div>
         </ul>
           
