@@ -39,6 +39,27 @@
     border: 1px solid #C6CAD0;
   }
 
+  .card-button-pages{
+    background-color: white;
+    border: 1px solid #C6CAD0;
+    display: flex;
+    width: 142.962px;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .text-card-button{
+    color: var(--Body-Text, #666);
+/* Small */
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.875px; /* 112.5% */
+  }
+
   .card-button:hover {
     background-color: #F9F9F9;
   }
@@ -50,4 +71,28 @@
     font-style: normal;
     font-weight: 700;
     line-height: 22.5px; /* 125% */
+  }
+
+  .subtitle-subpages{
+    color: #707070;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.25px; /* 112.5% */
+  }
+
+  .title-h1-subpages{
+    color: var(--Azul-Primario, #143F6A);
+    font-size: 32.44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36.495px; /* 112.5% */
+  }
+
+  .title-resources{
+    color: var(--Azul-Primario, #143F6A);
+    font-size: 28.83px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.434px; 
   }
