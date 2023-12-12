@@ -15,7 +15,6 @@ import SearchBar2 from "../components/searchbar2";
 import Footer from '../components/footer';
 import Card from '../components/cards1';
 import imgC1 from "../img/1racard.svg";
-import imgC2 from "../img/2card.svg";
 import imgC3 from "../img/3card.svg";
 import imgC4 from "../img/4cart.svg";
 import imgC5 from "../img/6card.svg";
@@ -135,7 +134,7 @@ Worksheet Template" subtitle="Team Building and Management " text="Lorem ipsum d
             title="Coordinators and Supervisors"   
             imageUrl={imgC3}
           />
-        </Link> 
+        </Link>
         <Link to="/CoordinatorsAndSupervisors">
           <Card
             title="Agencies and Organizations"   
@@ -148,7 +147,7 @@ Worksheet Template" subtitle="Team Building and Management " text="Lorem ipsum d
             imageUrl={imgC5}
           />
         </Link>
-        <Link to="/CommunityEngagementAdvocacy">
+        <Link to="/ChwIntegrationHealthcare">
           <Card
             title="Community Engagement and Advocacy"   
             imageUrl={imgC6}
