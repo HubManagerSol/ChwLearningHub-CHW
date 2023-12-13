@@ -10,7 +10,7 @@ import InterestCard from '../components/shared/cards/InterestCard'
 import TopicsCard from '../components/shared/cards/TopicsCard'
 import {} from '../styles/Header.css'
 import {} from '../styles/Titles.css'
-import Menu from '../components/menu2';
+import Menu from '../components/menu';
 import {  } from "./home";
 import SearchBar2 from "../components/searchbar2";
 import Footer from '../components/footer';

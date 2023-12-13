@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // Import the CSS file for styling (make sure to adjust the path as needed)
-import '../style/menu2.css';
-
+import '../style/menu.css';
+import LoginForm from './logginForm';
 // Import the image for the logo (adjust the path accordingly)
 import ElSol from "../img/CHWLearningHUB_Logo.png"
 
@@ -24,12 +24,41 @@ function Menu() {
     setMenuOpen(!menuOpen);
   };
 
+  const handleOpenPopup = () => {
+    console.log('Abriendo popup...');
+    
+  };
+
+  const handleClosePopup = () => {
+    console.log('Cerrando popup...');
+    
+  };
+
+  const buttonStyle = {
+    
+
+    color: 'white',
+    backgroundColor: "#5ABFCB",/* Color de fondo */
+   border:"none",
+   borderRadius: "5px",
+   padding:"5px",
+  with:"100px",
+   position:"relative",
+   top:'-3px',
+   left:'15px'
+  };
+
+  const validUsersData = {
+    "LeidyLopes@prueba.co": "HelloWord",
+    "AlejandroWills@prueba.co": "HelloWord",
+    "CuentaGeneral@prueba.co": "HelloWord"
+  };
   // Render the header component
   return (
     <header>
       <nav>
         
-  <div className="LanguageSelectorC">
+  <div id='LanguageSelectorC' className="LanguageSelectorC">
 
     <LanguageSelector />
   </div>
@@ -43,7 +72,7 @@ function Menu() {
         </div>
         
         {/* Button to toggle the menu on smaller screens */}
-        <button id='Menu' className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <button id='Menuu' className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <span className="menu-icon">&#9776;</span> {/* Hamburger icon */}
         </button>
         <div className="line"></div>
@@ -51,14 +80,22 @@ function Menu() {
         {/* Main menu */}
         <ul id='Menu' className={`menu ${menuOpen ? 'open' : ''}`}>
           
-          <Link to="/"><li> HOME </li> </Link>
-          <Link to="/Error404"><li> ABOUT </li> </Link>
-          <Link to="/Error404"><li> TOPICS </li> </Link>
-          <Link to="/Error404"><li> RESOURCES</li> </Link>
-          <Link to="/Error404"><li> GAMES</li> </Link>
-          <Link to="/Error404"><li> BLOG</li> </Link>
-          <Link to="/Error404"><li> CONTACT </li> </Link>
-          <div className="botnCont">
+          <Link to="/Home"><li> <a href="#">HOME</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">ABOUT</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">TOPICS</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">RESOURCES</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">GAMES</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">BLOG</a> </li> </Link>
+
+          <Link to="/Error404"><li> <a href="#">CONTACT</a> </li> </Link>
+          <div id='botnCont' className="botnCont">
+          <LoginForm
+            onOpenPopup={handleOpenPopup}
+            onClosePopup={handleClosePopup}
+            buttonStyle={buttonStyle}
+            validUsersData={validUsersData}
+             />
+          <li><a href="#" id='singupBottomm' className="signup-buttonn">Sign Up</a></li>
           </div>
         </ul>
           
@@ -67,5 +104,4 @@ function Menu() {
   );
 }
 
-// Export the Menu component as the default export
 export default Menu;
