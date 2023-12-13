@@ -69,7 +69,7 @@ const CommunityHealthEducation = () => {
       </div>
       <div className='row'>
         <div className='row'>
-          <p className='title-route'>Home - CHWs / Community Health Education</p>
+          <p className='title-route'>Home / Community Health Education</p>
 
           <div className='row'>
             <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Chronic Diseases</h1>
