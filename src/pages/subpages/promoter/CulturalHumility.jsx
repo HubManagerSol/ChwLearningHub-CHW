@@ -48,6 +48,7 @@ const CulturalHumility = () => {
   const handleMouseLeave3 = () => {
     setIsHovered3(false);
   };
+  
   return (
     <div style={{ maxWidth:'1920px',  backgroundColor:'white' }}> 
       <main  id="main1" className="main1" >
