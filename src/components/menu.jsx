@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 // Import the CSS file for styling (make sure to adjust the path as needed)
 import '../style/menu.css';
 import LoginForm from './logginForm';
-
 // Import the image for the logo (adjust the path accordingly)
 import ElSol from "../img/CHWLearningHUB_Logo.png"
 
@@ -16,7 +15,6 @@ import ElSol from "../img/CHWLearningHUB_Logo.png"
 function Menu() {
   
 
-
   
   // Use the 'useState' hook to manage the 'menuOpen' state
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,34 +23,42 @@ function Menu() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
   const handleOpenPopup = () => {
     console.log('Abriendo popup...');
-    // Lógica adicional al abrir el popup
+    
   };
 
   const handleClosePopup = () => {
     console.log('Cerrando popup...');
-    // Lógica adicional al cerrar el popup
+    
   };
 
   const buttonStyle = {
-    // Estilos personalizados para el botón
-    backgroundColor: 'blue',
+    
+
     color: 'white',
-    // ... otros estilos
+    backgroundColor: "#5ABFCB",/* Color de fondo */
+   border:"none",
+   borderRadius: "5px",
+   padding:"5px",
+  with:"100px",
+   position:"relative",
+   top:'-3px',
+   left:'15px'
   };
 
   const validUsersData = {
-    "WebDevelopers23": "ElSolNec"
-
-    // ... otros usuarios y contraseñas
+    "LeidyLopes@prueba.co": "HelloWord",
+    "AlejandroWills@prueba.co": "HelloWord",
+    "CuentaGeneral@prueba.co": "HelloWord"
   };
   // Render the header component
   return (
     <header>
       <nav>
         
-  <div className="LanguageSelectorC">
+  <div id='LanguageSelectorC' className="LanguageSelectorC">
 
     <LanguageSelector />
   </div>
@@ -66,7 +72,7 @@ function Menu() {
         </div>
         
         {/* Button to toggle the menu on smaller screens */}
-        <button id='Menu' className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <button id='Menuu' className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <span className="menu-icon">&#9776;</span> {/* Hamburger icon */}
         </button>
         <div className="line"></div>
@@ -74,27 +80,22 @@ function Menu() {
         {/* Main menu */}
         <ul id='Menu' className={`menu ${menuOpen ? 'open' : ''}`}>
           
-          <Link to="/"><li> HOME</li> </Link>
-          <Link to="/Error404"><li> ABOUT</li> </Link>
-          <Link to="/Error404"><li> TOPICS</li> </Link>
-          <Link to="/Error404"><li> RESOURCES </li> </Link>
-          <Link to="/Error404"><li> GAMES </li> </Link>
-          <Link to="/Error404"><li> BLOG </li> </Link>
-          <Link to="/Error404"><li> CONTACT</li> </Link>
-          <div className="botnCont">
+          <Link to="/Home"><li> <a href="#">HOME</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">ABOUT</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">TOPICS</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">RESOURCES</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">GAMES</a> </li> </Link>
+          <Link to="/Error404"><li> <a href="#">BLOG</a> </li> </Link>
 
-          <li><a href="/login" id='loguinBottomm' className="login-buttonn">Log In</a></li>
-          <li><a href="/SingUp" id='singupBottomm' className="signup-buttonn">Sign Up</a></li>
-
-          <div className='loginCont'>
-      <LoginForm
-        onOpenPopup={handleOpenPopup}
-        onClosePopup={handleClosePopup}
-        buttonStyle={buttonStyle}
-        validUsersData={validUsersData}
-      />
-      </div>   <li><a href="#" id='singupBottomm' className="signup-buttonn">Sign Up</a></li>
- (loguin)
+          <Link to="/Error404"><li> <a href="#">CONTACT</a> </li> </Link>
+          <div id='botnCont' className="botnCont">
+          <LoginForm
+            onOpenPopup={handleOpenPopup}
+            onClosePopup={handleClosePopup}
+            buttonStyle={buttonStyle}
+            validUsersData={validUsersData}
+             />
+          <li><a href="#" id='singupBottomm' className="signup-buttonn">Sign Up</a></li>
           </div>
         </ul>
           

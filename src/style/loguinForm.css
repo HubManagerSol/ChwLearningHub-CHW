@@ -16,7 +16,7 @@
     backface-visibility: 50px;
     font-family: 'MiFuente';
     font-size: 11px;
- 
+  z-index: 3000;
   }
  
   @font-face {
@@ -100,4 +100,3 @@ input[type="password"] {
     transition: 1s;
     color:black;
   }
-  

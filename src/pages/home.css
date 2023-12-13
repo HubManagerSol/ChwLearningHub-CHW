@@ -11,7 +11,7 @@
     max-width: 1920px;
 }
 .Appp{
- /* overflow-x: hidden; */
+ overflow-x: hidden;
  max-width: 1320px;
 }
 .main4 {
@@ -30,15 +30,18 @@
 
     z-index: 900;
     position: relative;
-    top: -710px;
+    top: -815px;
     height:200px;
 }
 
 .backMain{
-    width: 100%;
+    width: 104%;
+    
     position: relative;
-    top: -450px;
-    transition: 1s;
+   left: -14px;
+   top: -450px;
+   transition: 1s;
+
 }
 
 .Tile1{
@@ -408,196 +411,6 @@ top: -30px;
     top: 50px;
 }
 
-/* AÃ±ade estas clases al archivo App.css */
-.background-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  backdrop-filter: blur(4px); /* Ajusta el valor de blur segÃºn tus preferencias */
-}
-
-
-.popup-container {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(252, 251, 251);
- 
-  border-radius: 0px;
-  padding: 50px;
-  max-width: 900px;
-  min-width: 900px;
-  width: 90%;
-  text-align: center;
-  z-index: 2;
-  height: 65vh;
-}
-#imgLoginCond{
-   left: 77%;
-    position: relative;
-    top: -425px;
-    border-radius: 10px;
-    background-color: transparent;
-}
-#imgLogin{
-    width: 420px;
-    z-index: -1;
-    border-radius: 10px;
-}
-
-/* ... Otros estilos ... */
-
-/* Modifica el .popup-container para que estÃ© centrado y con un fondo oscuro cuando estÃ© abierto */
-
-.popup-container.active {
-  display: block;
-}
-
-.background-overlay.active {
-  display: block;
-}
-/* Agrega estas reglas al final de tu archivo CSS */
-
-.active {
-  display: block;
-}
-
-
-
-
-
- form {
-  display: flex;
-  flex-direction: column;
-}
-
- .form-group {
-  margin-bottom: 20px;
-  position: relative;
-  left: -13%;
-  z-index: 40;
-  padding: 10px;
-}
-
- label {
-  color: #fff;
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.inputLoguin {
-  width: 70%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  color: rgb(159, 42, 42);
-  z-index: 10;
-}
-
-.btnn {
-  width: 80%;
-  padding: 10px;
-  background-color: #1b8d8d;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.5s;
-  position: relative;
-  left: 9%;
-  z-index: 10;
-}
-.btnn:hover{
-  background-color: #b6b6b6;
-  color: #000000;
-}
-.InputsContainer{
-  
-  width: 60%;
-}
-
-.inputLoguin[type="text"],
-.inputLoguin[type="password"] {
-  width: 80%;
-  padding: 5px;
-  margin-bottom: 15px;
-  border: none; /* Elimina el borde por completo */
-  border-bottom: 1px solid #000000; /* Aplica solo la lÃ­nea en la parte inferior */
-  border-radius: 0px;
-  filter: opacity(70%);
-  color: rgb(159, 42, 42);
-  z-index: 20;
-}
-.login-content {
-  z-index: 100;
-  height: 100%;
-  background-color: white; /* Fondo blanco */
-  padding: 20px; /* Espaciado interno para mayor claridad */
-  border-radius: 8px; /* Bordes redondeados para un aspecto mÃ¡s suave */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
-}
-.titleLogion {
-  color: #909090;
-  position: relative;
-  left: 20px;
-  font-size:15px;
- width: 300px;
-}
-.usernameText{
-  padding: 15px;
-  color: #909090;
-  position: relative;
-left: 70px;
-top: -25px;
-  font-size: 13px;
-}
-.RememberMeText{
-  text-decoration: none;
-  color: #909090;
-  position: relative;
-  top: -15px;
-  left: -31%;
-  font-size: 14px;
-  padding: 10px;
-  transition: 0.3s;
-}
-.RememberMeText:hover{
-  color: #000000;
-  transition: 0.3s;
-}
-.titleLoguin{
-  color: rgb(56, 131, 131);
-  font-size: 15px;
-  position: relative;
-padding: 10px;
-  top: -20px;
-
-  width: 100px;
-  height: 30px;
-}
-.logoLogeo {
-    max-width: 130px; /* Ajusta el ancho máximo según tus necesidades */
-    position: relative;
-    margin: 0px; /* Espaciado entre la imagen y los botones del menú */
-    transition: opacity 0.3s ease; /* Transición de opacidad */
-   position: relative;
-   top: -30px;
-   left: 30%;
-   z-index: 30;
-
-}
-/* ... Otros estilos ... */
-
-/* Modifica el .popup-container para que estÃ© centrado y con un fondo oscuro cuando estÃ© abierto */
-
 @media screen and (max-width: 5416px) and (max-height:2420px){
     .main6{
         top: -400px;
@@ -625,14 +438,14 @@ padding: 10px;
         top: 600px;
     }
     .Appp{
- /* overflow-x: hidden; */
+ overflow-x: hidden;
  max-width: 1520px;
 }
 }
 
 @media screen and (max-width: 1410px){
     .Appp{
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         max-width: 1520px;
     }
 }
@@ -648,21 +461,17 @@ padding: 10px;
 }
 
 @media screen and (max-width: 1920px) {
-
-    .main6 {
+    .main6{
         top: 700px;
     }
-
-    .Appp {
-        overflow-y: hidden;
+    .Appp{
+        overflow-x: hidden;
         max-width: 1750px;
-    }
-
-    .CardContainer {
+       }
+    .CardContainer{
         left: 10%;
     }
-
-    .main3 {
+    .main3{
     width: 110%;
 
     .contenedoresCard4{    
@@ -758,6 +567,15 @@ padding: 10px;
         top: 100px;
         left: 0%;
       }
+      .main2{
+        width: 100%;
+        height: 60vh;
+        background-color:#183f66;
+        z-index: 40;
+        position: relative;
+        top: -800px;
+        scroll-snap-align: start;
+    }
   }
 @media screen and (max-width: 1500px) {
    
@@ -805,12 +623,13 @@ padding: 10px;
         top: 100px;
         left: -8%;
       }
+   
 }
 
 @media screen and (max-width: 1300px) {
    
     .CardContainer{
-        left: 0%;
+        left: 3%;
     }
     .CardContainer2{
         left: 0%;
@@ -841,10 +660,17 @@ padding: 10px;
         top: 100px;
         left: -8%;
       }
+   
 }
 @media screen and (max-width: 1270px)   {
     #main6{
         top: 900px;
+    }
+    .Tile1{
+        left: 37%;
+    }
+    .text1{
+        left: 29%;
     }
     .contenedoresCard4{
         background-image: url(../img/cardsTemporales.png);
@@ -858,17 +684,29 @@ padding: 10px;
         top: 100px;
         left: 3%;
       }
+        #main2{
+    top: -600px;
+    }
 }
 @media screen and (max-width: 1370px)  and (max-height:650px) {
     #main6{
-        top: 900px;
+        top: 1100px;
     }
+    #main2{
+        top: -700px;
+        }
+        .CardContainer{
+            left: 1%;
+        }
 }
 @media screen and (max-width: 1180px){
     .backMain{
         top: -440px;
         transition: 1s;
     }
+    #main2{
+        top: -600px;
+        }
      .createFreeCont{
     color: #fff;
     width: 37%;
@@ -881,21 +719,13 @@ padding: 10px;
     .ImgMain7 {
     width: 500px; 
      }
-     #main2{
-        width: 100%;
-        height: 60vh;
-        background-color:#183f66;
-        z-index: 40;
-        position: relative;
-        top: -800px;
-        scroll-snap-align: start;
-    }
+   
     .main5{
         top:-20px;
     }
     
     #main6{
-        top:750px;
+        top:910px;
     }
     
 }
@@ -906,12 +736,15 @@ padding: 10px;
 }
 @media screen and (max-width: 1080px){
     #main2{
-    top: -600px;
-    }
+        top: -600px;
+        }
     #main6{
         top:1000px;
     }
-   
+   .CardContainer2{
+    position: relative;
+    left: -100px;
+   }
     .ImgMain5{
         width: 800px;
         top: 22px;
@@ -925,6 +758,9 @@ padding: 10px;
         height: 600px;
         left: 3%;
       }
+      .CardContainer{
+        left: 10%;
+    }
 }
 @media screen and (max-width: 1080px)  and (max-height:650px) {
     #main6{
@@ -941,17 +777,31 @@ padding: 10px;
     .main6{
         top: 800px;
       }
+      .CardContainer{
+        left:5%;
+    }
+    .CardContainer2{
+        position: relative;
+        left: -100px;
+       }
 }
 @media screen and (max-width: 1020px){
     .inputContainer{
         top:50px;
     }
     .main4{
-        height: 140vh;
+        height: 180vh;
     }
     #main6{
-        top: 1400px;
+        top: 1500px;
       }
+      .CardContainer{
+        left: 5%;
+    }
+    .CardContainer2{
+        position: relative;
+        left: -100px;
+       }
      
 }
 
@@ -961,10 +811,17 @@ padding: 10px;
         transition: 1s;
     }
     .Tile1{
-        left: 28%;
+        left:35%;
     }
+    .learn-More{
+        left: 45%;
+    }
+    .CardContainer2{
+        position: relative;
+        left: -150px;
+       }
     .text1{
-        left: 25%;
+        left: 30%;
         font-size: 16px;
         width: 400px;
     }
@@ -1031,6 +888,13 @@ padding: 10px;
         top: 100px;
         left: 3%;
       }
+      .CardContainer{
+        left: 14%;
+    }
+      .CardContainer2{
+    position: relative;
+    left: 0px;
+   }
 }
 
 @media screen and (max-width: 800px){
@@ -1086,6 +950,9 @@ padding: 10px;
   .ImgMain7 {
     width: 400px; 
      }
+     .CardContainer{
+        left: 7%;
+    }
 }
 @media screen and (max-width: 780px) {
  .main4{
@@ -1112,10 +979,14 @@ padding: 10px;
 
 }
 @media screen and (max-width: 770px) and (max-height:1050px){
-    .main2{
-        height: 100vh;
-        top: -650px;
+    #main2{
+        height: 120vh;
+        top: -550px;
         z-index: 10;
+        background-color:#173f67;
+    }
+    #main6{
+        top: 800px;
     }
   
 }
@@ -1148,7 +1019,7 @@ padding: 10px;
         background-color:#183f66;
         z-index: 40;
         position: relative;
-        top: -620px;
+        top: -600px;
         scroll-snap-align: start;
     }
     .Tile1{
@@ -1185,7 +1056,7 @@ padding: 10px;
 @media screen and (max-width: 700px){
     #main2{
        
-        top: -670px;
+        top: -600px;
     }
     .main4{
         height: 140vh;
@@ -1203,13 +1074,21 @@ padding: 10px;
         width: 400px;
     }
     #main6{
-        top: 1250px;
+        top: 1700px;
       }
       .main4{
-        height: 180vh;
+        height: 300vh;
+    }
+    .main2{
+        height: 100vh;
+        top: -0px;
+    }
+    .CardContainer{
+        left: 5%;
+        top: -850px;
     }
 }
-@media screen and (max-width: 620px){
+@media screen and (max-width: 630px){
     .backMain{
         top: -300px;
         transition: 1s;
@@ -1227,6 +1106,24 @@ padding: 10px;
         width: 400px;
         top:0px;
     }
+    .titleMain2{
+        position: relative;
+        top: 100px;
+      
+        color: #fff;
+        font-size: 18px;
+    }
+    .textMain2 {
+       
+        top: 100px;
+        font-size: 14px;
+        width: 50%;
+        text-align: center;
+        font-weight: bold;
+        font-stretch: expanded;
+        color: rgb(255, 255, 255);
+        z-index: 30;
+    }
     .learn-More{
         left: 42%;
         top: 0px;
@@ -1236,10 +1133,16 @@ padding: 10px;
         height: 190vh;
         z-index: 5000;
      }
- 
-    .main2{
+     .CardContainer{
+        left: 15%;
+        top: -870px;
+    }
+    #main2{
         height: 100vh;
-        top: -400px;
+        top: -550px;
+    }
+    .CardContainer2{
+        top: 80px;
     }
      .video {
         position: absolute;
@@ -1253,7 +1156,7 @@ padding: 10px;
       }
    
       #main6{
-        top: 800px;
+        top: 1400px;
       }
 }
 
@@ -1297,13 +1200,50 @@ padding: 10px;
         left: 32%;
     }
 }
+@media screen and (max-width: 550px) {
+    .text1{
+        left: 32%;
+        font-size: 1p8x;
+        width: 200px;
+        top:0px;
+        
+    }
+    .CardContainer{
+        left: 5%;
+        top: -870px;
+    }
+    .main2{
+        height: 100vh;
+        top: -300px;
+    }
+    .titleMain2{
+        left: 32%;
+    }
+    #main2{
+        height: 110vh;
+        top: -800px;
+    }
+    
+}
+
 @media screen and (max-width:520px){
  
-      .main6{
-        top: 1100px;
+      #main6{
+        top: 1650px;
     }
     .createfreeP{
         width: 200%;
+    }
+    .CardContainer{
+        left: 15%;
+        top: -870px;
+    }
+    #main2{
+        height: 110vh;
+        top: -650px;
+    }
+    .CardContainer2{
+        left: 10%;
     }
 }
 @media screen and (max-width:490px){
@@ -1429,24 +1369,46 @@ padding: 10px;
       .title2{
         color: transparent;
     }
+    .CardContainer{
+        left:10%;
+    }
     #main2{
        
         background-color: #183f66;
         z-index: 40;
         position: relative;
-        top: -760px;
+        top: -700px;
         z-index: 20;
+        height: 300vh;
     }
-     .main3 {
-       
-        width: 100vw;
-    height: 100vh;
-        position: relative;
+    .main2{
+        height: 100vh;
+        top: -300px;
+    }
+   .textMain2{
+    top: 14%;
+   }
+    .titleMain2{
+        left: 25%;
+        top: 13%;
+    }
+    .CardContainer2{
+        left: -5%;
+        top: 10%;
+    }
+    .main4  {
         top: 100px;
+    }   
+    .main3 {
+       left:0%;
+        width: 100vw;
+    height: 50vh;
+        position: relative;
+        top: 370px;
       }
       .video {
         position: absolute;
-        top:0;
+        top:0%;
         left: 0;
         width: 100%;
         height: 40%;
@@ -1454,6 +1416,9 @@ padding: 10px;
         z-index: 210;
         pointer-events: none; 
       }
+      #main6{
+        top: -600px;
+    }
 }
 
 @media screen and (max-width:420px) and (max-height:780px){

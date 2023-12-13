@@ -96,12 +96,7 @@
     }
   }
   @media screen and (max-width:550px){
-    .card2{
-      left: 4%;
-      top: 0px;
-      max-width: 80px;
-    height: 120px;
-    }
+   
      
   .card2 h2 {
     font-size: 12px;

@@ -74,7 +74,7 @@ transition: 1.5s;
   position: relative;
   top: -318px;
   z-index: 300;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent); 
+
   background-size: 200% 100%; 
   background-position: 100%; 
   width:100%;
@@ -86,14 +86,7 @@ transition: 1.5s;
   animation: shine 4s linear infinite; 
 }
 
-@keyframes shine {
-  0% {
-    background-position: -100%; 
-  }
-  100% {
-    background-position: 200%; 
-  }
-}
+
 
 .card3 p {
   color: #ffffff;

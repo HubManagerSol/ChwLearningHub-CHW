@@ -4,32 +4,35 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FAF5ED;
-   
+
   }
   .e404Container{
     height: 100vh;
     overflow: hidden;
+   
   }
   .error-container {
     max-width: 800px;
-    height: 100px;
+    height: 190px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #FAF5ED;
+    max-height: 100vh;
     border-radius: 5px;
    font-size: 30px;
     text-align: center;
+    position: relative;
+    top: -400px;
   }
   
   h1 {
-    color: #626262;
-    top: -40px;
+    color: #878585;
+    top: 0px;
     position: relative;
 
   }
   
   .e404Text {
-    color: #a0a0a0;
+    color: rgb(82, 78, 78);
     font-size: 20px;
 position: relative;
 top:-80px;
@@ -43,7 +46,19 @@ top:-80px;
   }
   .imgFooter404{
     position: relative;
-    top: -170px;
+    
     background-color: transparent;
     height: 50vh;
+ 
+
   }
+  .img404{
+    position: relative;
+    top: 50px;
+    width: 100%;
+  }
+
+.Footer404Cont{
+  position: inherit;
+  top: -690px;
+}

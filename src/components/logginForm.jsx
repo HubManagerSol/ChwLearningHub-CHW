@@ -46,7 +46,7 @@ function LoginForm({ onOpenPopup, onClosePopup, buttonStyle, validUsersData }) {
   return (
     <div>
       <button style={buttonStyle} onClick={handleOpenPopup}>
-        Abrir Popup
+       Login
       </button>
 
       <div className={`background-overlay ${showPopup || showRegisterPopup  ? 'active' : ''}`} onClick={handleClosePopup}></div>
@@ -62,7 +62,7 @@ function LoginForm({ onOpenPopup, onClosePopup, buttonStyle, validUsersData }) {
         <form onSubmit={handleSubmit}>
               <div className="form-group">
                
-                <label className='usernameText' htmlFor="username">username</label>
+                <label className='usernameText' htmlFor="username"></label>
                 <input
                  className='inputLoguin'
                 placeholder='Type your username'
@@ -75,7 +75,7 @@ function LoginForm({ onOpenPopup, onClosePopup, buttonStyle, validUsersData }) {
               </div>
               <div className="form-group">
                 <label className="usernameText" htmlFor="password">
-                password
+        
                 </label>
                 <input
                 className='inputLoguin'
@@ -91,10 +91,11 @@ function LoginForm({ onOpenPopup, onClosePopup, buttonStyle, validUsersData }) {
               <button className="btnn" type="submit">
                 INICIAR
               </button>
-        </form>
-        <div id='imgLoginCond'> 
+              <div id='imgLoginCond'> 
         <img id='imgLogin' src={ImhLogin} alt="" />
         </div>
+        </form>
+      
         {error && <p className="error">{error}</p>}
       </div>
 

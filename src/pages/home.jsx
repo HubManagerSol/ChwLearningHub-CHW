@@ -58,10 +58,10 @@ function Home() {
         
     
         <div id="CardContainer" className="CardContainer">
-        <h2 className="title2">Browse by Topic</h2>
+        {/*<h2 className="title2">Browse by Topic</h2>*/}
         <Link to="/chws-promoter">
             <Card
-              title="CHW's/ promotores"   
+              title="CHW's/ Health Wokers"   
               imageUrl={imgC1}
             />
           </Link>

@@ -16,6 +16,8 @@ header {
     display: flex;
     flex-direction: row;
     width: 200px;
+    position: relative;
+    left: 20%;
 }
 
 /* Estilos para el menú principal */
@@ -103,11 +105,14 @@ header {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+    left: 30px;
+
 }
 
 /* Estilos para el ícono del botón de menú */
-.menu-icon {
-    width: 0px;
+#menu-icon {
+    width: 20px;
     height: 0px;
     background-color: #fff;
     display: block;
@@ -117,8 +122,13 @@ header {
     top: 0px;
     max-width: 1920px;
     z-index: 200000;
+    left: 10px;
+    
 }
-
+.imgLoginCond{
+    position: relative;
+    top: -100px;
+}
 /* Estilos para el ícono del botón de menú cuando está abierto */
 .menu-button.open .menu-icon {
     background-color: transparent;
@@ -135,13 +145,13 @@ header {
    
 
 }
-.line {
+#line {
     height: 1px; /* Grosor de la línea */
     background-color: #c5c4c4; /* Color de la línea */
     width: 172%; /* Ocupar el 100% de ancho */
     position: relative;
     top: -52px;
-    left: -10%;
+    left: 0%;
 }
 .LanguageSelectorC{
     position: relative;
@@ -259,23 +269,22 @@ header {
         align-items: center; /* Centra verticalmente los elementos */
         transition: background-color 1s;
         height: auto;
+    
     }
-    .LanguageSelectorC{
-        position: relative;
-        left: 370%;
+    .LanguageSelectorC {
+        left: 8%;
         font-size: 12px;
-        top: -20px;
+        top: -5px;
     }
     .line {
-        height: 1px; /* Grosor de la línea */
-        background-color: #c5c4c4; /* Color de la línea */
-      /* Ocupar el 100% de ancho */
+        height: 1px;
+        background-color: #c5c4c4;
+        width: 100%;
         position: relative;
-        top: -15px;
-        left: -55%;
-        width: 3000px;
+        top: -52px;
+        left: 0;
     }
-    .menu-icon{
+    .menu-icon {
         background-color: #FAF5ED;
         color: #333;
         left: -40px;
@@ -283,12 +292,13 @@ header {
         top: -48px;
     }
     .menu {
-        display: none; /* Oculta el menú principal */
-        flex-direction: column; /* Los elementos se apilan uno encima del otro */
-        align-items: center; /* Centra los elementos verticalmente */
-        position: relative;
-        left: -10%;
-        top: -25px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
         transition: 1s;
     }
     .menu li {
@@ -402,3 +412,193 @@ header {
         top: -40px;
     }
 }
+.background-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(10px); /* Ajusta el valor de blur segÃºn tus preferencias */
+  }
+  
+  
+  .popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(252, 251, 251);
+   
+    border-radius: 0px;
+    padding: 50px;
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    z-index: 2;
+    height: 600px;
+  }
+  
+  /* ... Otros estilos ... */
+  
+  /* Modifica el .popup-container para que estÃ© centrado y con un fondo oscuro cuando estÃ© abierto */
+  
+  .popup-container.active {
+    display: block;
+  }
+  
+  .background-overlay.active {
+    display: block;
+  }
+  /* Agrega estas reglas al final de tu archivo CSS */
+  
+  .active {
+    display: block;
+  }
+  
+  .popup-container2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(66, 98, 69);
+    border: 0.1px solid rgb(1, 1, 1);
+    border-radius: 0px;
+    padding: 50px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .popup-container2 h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+   form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+   .form-group {
+    margin-bottom: 20px;
+  }
+  
+   label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .inputLoguin {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(159, 42, 42);
+  }
+  
+  .btnn {
+    width: 80%;
+    padding: 10px;
+    background-color: #1b8d8d;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    left: 9%;
+  }
+  .btnn:hover{
+    background-color: #b6b6b6;
+    color: #000000;
+  }
+  .InputsContainer{
+    
+    width: 60%;
+  }
+  
+  .inputLoguin[type="text"],
+  .inputLoguin[type="password"] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: none; /* Elimina el borde por completo */
+    border-bottom: 1px solid #000000; /* Aplica solo la lÃ­nea en la parte inferior */
+    border-radius: 0px;
+    filter: opacity(70%);
+    color: rgb(159, 42, 42);
+  }
+  .login-content {
+    z-index: 100;
+    height: 90%;
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno para mayor claridad */
+    border-radius: 8px; /* Bordes redondeados para un aspecto mÃ¡s suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  }
+  .titleLogion {
+    color: #909090;
+    font-size:17px;
+   
+  }
+  .usernameText{
+    padding: 15px;
+    color: #909090;
+    position: relative;
+    left: -33%;
+    font-size: 13px;
+  }
+  .RememberMeText{
+    text-decoration: none;
+    color: #909090;
+    position: relative;
+    top: -15px;
+    left: -31%;
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.3s;
+  }
+  .RememberMeText:hover{
+    color: #000000;
+    transition: 0.3s;
+  }
+  .titleLoguin{
+    color: rgb(56, 131, 131);
+    font-size: 15px;
+    position: relative;
+  padding: 10px;
+    top: 0px;
+  
+    width: 100px;
+    height: 30px;
+  }
+   .logoLogeo{
+    width: 140px;
+    position: relative;
+    left: 35%;
+    top: -40px;
+    z-index: 2000;
+  }
+  #imgLoginCond{
+    position: relative;
+    top: -422px;
+    border-radius: 10px;
+    height: 450px;
+    width: 360px;
+    left: 95%;
+  }
+  #imgLogin{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
