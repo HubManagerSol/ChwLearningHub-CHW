@@ -1,0 +1,24 @@
+.read-card {
+    width: 1440px;
+    height: 371px;
+    background-color: #143F6A;
+    border-radius: 5px;
+}
+
+.title {
+    color: var(--White, #FFF);
+    /* H4 */
+    font-size: 25.63px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.834px; 
+    margin-top: 80px;
+}
+
+.subtitle{
+    color: var(--White, #FFF);
+    font-size: 22.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.125px; /* 125% */
+}

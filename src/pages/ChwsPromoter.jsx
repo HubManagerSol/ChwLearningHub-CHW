@@ -1,10 +1,9 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../components/shared/buttons/Button'; 
 import '../components/shared/buttons/ButtonSkills'; 
 import {  } from "../styles/Profile.css";
-import Header from '../components/core/Header';
 import InterestCard from '../components/shared/cards/InterestCard'
 import TopicsCard from '../components/shared/cards/TopicsCard'
 import {} from '../styles/Header.css'
@@ -21,7 +20,6 @@ import imgC4 from "../img/4cart.svg";
 import imgC5 from "../img/6card.svg";
 import imgC6 from "../img/7card.svg";
 import icon_career from "../mg-2/icon_career.svg";
-import introduction_icon from "../mg-2/introduction_icon.svg"
 import pencil_icon from "../mg-2/pencil_icon.svg"
 import roles_icon from "../mg-2/roles_icon.svg"
 import icon_group from "../mg-2/icon-group.svg"
@@ -34,9 +32,29 @@ import time_managment_icon from "../mg-2/time_managment_icon.svg"
 import stress_icon from "../mg-2/stress_icon.svg"
 import community_icon from "../mg-2/community_icon.svg"
 import communication_icon from "../mg-2/communication_icon.svg"
+import banner from "../mg-2/Banner0.png"
+import printable_icon from "../mg-2/printable_icon.svg"
 
 
 const ChwsPromoter = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
 
   return (
     <div style={{ maxWidth:'1920px',  backgroundColor:'white' }}> 
@@ -47,67 +65,104 @@ const ChwsPromoter = () => {
         <SearchBar2 />
       </div>
       <div style={{ width: '100%', boxSizing: 'border-box',position:"relative" }}>
-        <Header  imageUrl="/mg-2/header.png"/> 
+        <img src={banner} alt="img" style={{ width: '1440px', height:"450px" }} />
       </div>
       <div className='row'>
         <div className='col-12'>
-          <p className='title-route'>Home / Community Health Workers</p>
-            <div className='col-4'>
-              <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
-              <InterestCard img={icon_career} text='Career Advancement Opportunities' />
-            </div>
-
+          <p className='title-route'>
+            <Link style={{textDecoration: 'none',  color: isHovered ? '#47BBC6' : '#666',}} to="/"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave} >Home &#160;{'>'} &#160;
+            </Link> 
+            <Link style={{textDecoration: 'none',  color: isHovered2 ? '#47BBC6' : '#666',}} to="/chws-promoter"
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2} > Community Health Workers
+            </Link>
+          </p>
           <div className='row'>
             <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Community Health Workers Philosophy</h1>
             <div className="col-4">
-              <InterestCard img={introduction_icon} text='Introduction to CHW/Ps' style={{ marginRight: '10px' }} />
+            <Link to="/IntroductionCHWsPs">
+              <InterestCard img={printable_icon} text='Introduction to CHW/Ps' style={{ marginRight: '10px' }} />
+            </Link>
             </div>
             <div className="col-4">
+            <Link to="/PopularEducation">
               <InterestCard img={pencil_icon} text='Popular Education' style={{ marginRight: '10px' }} />
+            </Link>
             </div>
             <div className="col-4 mb-4">
+            <Link to="/RolesCoreCompetenciesC3">
               <InterestCard img={roles_icon} text='Roles & Core Competencies C3' />
+            </Link>
             </div>
             </div>
         <div>
+
+        <div className='col-4'>
+              <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
+              <Link to="/CareerPathwayOpportunities">
+                <InterestCard img={icon_career} text='Career Advancement Opportunities' />
+              </Link>
+            </div>
           <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Personal and Professional Development</h1>
         </div>
         <div className="row">
           <div className="col-sm-4">
+          <Link to="/GroupFacilitation">
             <InterestCard img={icon_group} text='Group Facilitation Communication' style={{ marginRight: '10px' }} />
+          </Link>
           </div>
           <div className="col-sm-4">
+          <Link to="/ProfessionalDevelopment">
             <InterestCard img={professional_icon} text='Professional Development' style={{ marginRight: '10px' }} />
+          </Link>
           </div>
           <div className="col-sm-4">
+          <Link to="/CulturalHumility">
             <InterestCard img={cultural_icon} text='Cultural Humility' />
+          </Link>
           </div>
         </div>
       <div className="row">
         <div className="col-sm-4">
+        <Link to="/SelfCare">
           <InterestCard img={self_care_icon} text='Self care' style={{ marginRight: '10px' }} />
+        </Link>
         </div>
         <div className="col-sm-4">
+        <Link to="/EmotionalIntelligence">
           <InterestCard img={emotional_intelligence_icon} text='Emotional Intelligence' style={{ marginRight: '10px' }} />
+        </Link>
         </div>
         <div className="col-sm-4">
+        <Link to="/Leadership">
           <InterestCard img={leadership_icon} text='Leadership' />
+        </Link>
         </div>
       </div>
       <div className="row">
         <div className="col-sm-4">
+        <Link to="/TimeManagement">
           <InterestCard img={time_managment_icon} text='Time Managment' style={{ marginRight: '10px' }} />
+        </Link>
         </div>
         <div className="col-sm-4">
+        <Link to="/StressManagement">
           <InterestCard img={stress_icon} text='Stress Management' style={{ marginRight: '10px' }} />
+        </Link>
         </div>
         <div className="col-sm-4">
+        <Link to="/CommunityOutreachSafety">
           <InterestCard img={community_icon} text='Community Outreach & Safety' />
+        </Link>
         </div>
       </div>
       <div className="row">
         <div className="col-sm-4">
+        <Link to="/Communication">
           <InterestCard img={communication_icon} text='Communication' />
+        </Link>
         </div>
       </div>
     {/* final cards */}
