@@ -162,18 +162,36 @@ header {
   position: relative;
   top: 20px;
 }
+@media screen and (max-width: 6800px) {
+  .botnCont{
+      display: flex;
+      flex-direction: row;
+      width: 200px;
+      position: relative;
+      left: 90%;
+      height: 10px;
+
+  }
+  .LanguageSelectorC{
+      left: 90%;
+  }
+  .line {
+     
+      width: 222%; /* Ocupar el 100% de ancho */
+  }
+}
 @media screen and (max-width: 1920px) {
   .botnCont{
       display: flex;
       flex-direction: row;
       width: 200px;
       position: relative;
-      left: 70%;
+      left: 90%;
       height: 10px;
 
   }
   .LanguageSelectorC{
-      left: 70%;
+      left: 90%;
   }
   .line {
      
@@ -582,7 +600,7 @@ header {
   }
   #imgLoginCond{
     position: relative;
-    top: -422px;
+    top: -388px;
     border-radius: 10px;
     height: 450px;
     width: 360px;

@@ -11,7 +11,11 @@
 	.st5{fill:#FECD38;}
 	.st6{fill:#1C3866;}
 	.st7{fill:#EFBF2F;}
-	.st8{fill:#FFFFFF;}
+	.st8{
+        fill:#F7C531;
+        fill-opacity: 0.7; /* Transparencia de la bolita amarilla */
+        opacity: 0.92; /* Ajusta este valor para cambiar la opacidad, 0 (transparente) a 1 (opaco) */
+    }
 	.st9{fill:#0077B1;}
 	.st10{clip-path:url(#SVGID_00000018928212427533588920000003006190027868845495_);}
 	.st11{clip-path:url(#SVGID_00000085229518548981503300000009996040465051559076_);}

@@ -41,7 +41,7 @@ function Home() {
       </div>
 
 
-      <h2 className="Tile1">
+      <h2 id="Title1" className="Tile1">
         Welcome to the <span className="bold-text">CHW Learning Hub</span>
       </h2>
         <p className="text1">We are a free, online resource people can gather information and access important tools.</p>
@@ -58,10 +58,10 @@ function Home() {
         
     
         <div id="CardContainer" className="CardContainer">
-        {/*<h2 className="title2">Browse by Topic</h2>*/}
+        <h2 className="title2"></h2>
         <Link to="/chws-promoter">
             <Card
-              title="CHW's/ Health Wokers"   
+              title="Community Health Workers"   
               imageUrl={imgC1}
             />
           </Link>

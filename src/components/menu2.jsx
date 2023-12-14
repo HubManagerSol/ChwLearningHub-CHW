@@ -98,7 +98,7 @@ function Menu() {
           <li><a href="#" id='singupBottomm' className="signup-buttonn">Sign Up</a></li>
           </div>
         </ul>
-          
+          http://localhost:3000/static/media/homebkgrn3-removebg.d5e95f091641866d2245.png
       </nav>
     </header>
   );
