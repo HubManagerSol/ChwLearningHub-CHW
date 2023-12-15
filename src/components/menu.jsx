@@ -80,7 +80,7 @@ function Menu() {
         {/* Main menu */}
         <ul id='Menu' className={`menu ${menuOpen ? 'open' : ''}`}>
           
-          <Link to="/Home"><li> <a href="#">HOME</a> </li> </Link>
+          <Link to="/"><li> <a href="#">HOME</a> </li> </Link>
           <Link to="/Error404"><li> <a href="#">ABOUT</a> </li> </Link>
           <Link to="/Error404"><li> <a href="#">TOPICS</a> </li> </Link>
           <Link to="/Error404"><li> <a href="#">RESOURCES</a> </li> </Link>
