@@ -169,7 +169,7 @@ function Home() {
         </div>
           <img className="ImgMain5" alt="ImgMain5" src={ImgMain5} href="manimg" />       
       </div> 
-    <div className="contenedoresCard4">
+    <div id="contenedoresCard4" className="contenedoresCard4">
       <h2 className="h1cardRSS"><b></b></h2>
       <div className="card4-container">
       <h2 className="h1cardRSSsubTitle"><b></b></h2>
