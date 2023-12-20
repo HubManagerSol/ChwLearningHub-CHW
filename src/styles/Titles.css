@@ -101,3 +101,31 @@ font-weight: 400; /* 112.5% */
     font-weight: 700;
     line-height: 32.434px; 
   }
+
+  .subtitle-overview{
+  color: #646464;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title-h1-overview{
+color: var(--Azul-Primario, #143F6A);
+/* H3 */
+/* font-family: Red Hat Display; */
+font-size: 28.83px;
+font-style: normal;
+font-weight: 700;
+line-height: 32.434px; /* 112.5% */
+}
+
+.p-overview{
+  color: var(--Body-Text, #666);
+/* Body */
+/* font-family: Proxima Nova; */
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 20.25px; /* 112.5% */
+}
