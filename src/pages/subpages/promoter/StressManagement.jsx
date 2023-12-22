@@ -121,7 +121,6 @@ const StressManagement = () => {
               <h6  style={{color:"#666", marginTop:"10px"}}>Z to A</h6>
           </div>
         </div>
-
         <ReadCard 
           img={CalendarNextEvent14} 
           title={'291 - What is stress management?'}

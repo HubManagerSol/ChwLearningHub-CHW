@@ -112,14 +112,14 @@ const IntroductionCHWsPs = () => {
               <h6  style={{color:"#666", marginTop:"10px"}}>Z to A</h6>
           </div>
         </div>
-
+        <div style={{paddingTop: '30px'}}>
         <ReadCard 
           img={CalendarNextEvent2} 
           title={'111 - What is a Community Health Worker? '}
           subtitle={'Introduction to CHWs/Ps'}
           text={'Community Health Workers (CHWs) are recognized leaders and trusted members of the communities where they live and work. The CHW career path follows one of service, advocacy, and social justice...'}
         />
-
+      </div>
         <div>
           <h1 className='title-resources' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Resources</h1>
         </div>

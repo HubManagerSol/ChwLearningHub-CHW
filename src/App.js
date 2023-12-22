@@ -28,6 +28,7 @@ import StressManagement from './pages/subpages/promoter/StressManagement.jsx';
 import SearchResults from './pages/subpages/promoter/SearchResults.jsx';
 import TimeManagement from './pages/subpages/promoter/TimeManagement.jsx';
 import Steps from '../src/pages/StepsContainer' 
+import Overview from './pages/Overview.jsx';
 import "../src/App.css"
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='Overview' element={<Overview></Overview>}> </Route>
         <Route path='TimeManagement' element={<TimeManagement></TimeManagement>}></Route>
         <Route path='SearchResults' element={<SearchResults></SearchResults>}></Route>
         <Route path='StressManagement' element={<StressManagement></StressManagement>}></Route>
