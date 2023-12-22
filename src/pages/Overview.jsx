@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../components/shared/buttons/styles/Button.css'; 
 import '../components/shared/buttons/styles/ButtonSkills.css'; 
 import {  } from "../styles/Profile.css";
@@ -16,8 +16,45 @@ import imgC2 from "../img/2card.svg";
 import imgC3 from "../img/3card.svg";
 import imgC4 from "../img/4cart.svg";
 import imgC5 from "../img/6card.svg";
+import imgC6 from "../img/7card.svg";
 
 const Overview = () => {
+    const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
+  const [isHovered4, setIsHovered4] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
+
+  const handleMouseEnter3 = () => {
+    setIsHovered3(true);
+  };
+
+  const handleMouseLeave3 = () => {
+    setIsHovered3(false);
+  };
+
+  const handleMouseEnter4 = () => {
+    setIsHovered4(true);
+  };
+
+  const handleMouseLeave4 = () => {
+    setIsHovered4(false);
+  };
   return (
     <div style={{ maxWidth:'1920px',  backgroundColor:'white' }}> 
     <main  id="main1" className="main1" >
@@ -29,11 +66,28 @@ const Overview = () => {
       <div className='row'>
             <div className='col-11'>
             <div className='row'>
-            <p className='title-route'>Home - CHWs / Promotores / CHW/Promotor Philosophy / Introduction to CHWs/Ps</p>
+            <p className='title-route'>
+            <Link style={{textDecoration: 'none',  color: isHovered ? '#47BBC6' : '#666',}} to="/"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave} >Home &#160;{'>'} &#160;
+            </Link> 
+            <Link style={{textDecoration: 'none',  color: isHovered2 ? '#47BBC6' : '#666',}} to="/IntroductionCHWsPs"
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2} > Community Health Workers  &#160;{'>'} &#160;
+            </Link>
+            <Link style={{textDecoration: 'none',  color: isHovered3 ? '#47BBC6' : '#666',}} to="/IntroductionCHWsPs"
+              onMouseEnter={handleMouseEnter3}
+              onMouseLeave={handleMouseLeave3} > CHW Model  &#160;{'>'} &#160;
+            </Link>
+            <Link style={{textDecoration: 'none',  color: isHovered4 ? '#47BBC6' : '#666',}} to="/IntroductionCHWsPs"
+              onMouseEnter={handleMouseEnter4}
+              onMouseLeave={handleMouseLeave4} > Introduction to CHWs/Ps
+            </Link>
+          </p>
             </div>
   <div>
     <div className='row'>
-        <div className='col-11'>
+        <div className='col-12'>
         <div className="row">
   <h1 className='title-h1-subpages'>What is a Community Health Worker?</h1>
 </div>
@@ -264,7 +318,7 @@ const Overview = () => {
         <div className='col-md-4'>
             <div className='row'>
                 <div>
-                <Button style={{alignItems: 'right' ,color: 'white', background: '#143F6A', width: '12rem', height: '3.5rem', border: '1px solid #143F6A'
+                <Button style={{alignItems: 'right' ,color: 'white', background: '#47BBC6', width: '12rem', height: '3.5rem', border: '1px solid white'
 }}>See full list of qualities, <br></br> skills, and roles </Button>
                 </div>
             </div>
@@ -302,8 +356,8 @@ To access the full version of the code of ethics for CHWs/Ps, click on the follo
 </div>
 <div style={{width:'1196px',marginLeft: '0px', backgroundColor:'#F9F9F9', borderRadius:'10px', top:'80px', left:'4%'}}>
       <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold', marginLeft:"30px"}}>Other topics to explore</h1>
-      <div className='row' style={{}}>
-      <div className='col-12' style={{}}>
+      <div className='row' style={{width: '1920px'}}>
+      <div className='col-12' >
       <Link to="/chws-promoter">
           <Card
             title="CHW's/ promotores"
@@ -332,6 +386,12 @@ To access the full version of the code of ethics for CHWs/Ps, click on the follo
           <Card
             title="CHW into Healthcare"   
             imageUrl={imgC5}
+          />
+        </Link>
+        <Link to="/CommunityEngagementAdvocacy">
+          <Card
+            title="Community Engagement and Advocacy"   
+            imageUrl={imgC6}
           />
         </Link>
       </div>
