@@ -122,14 +122,14 @@ const CulturalHumility = () => {
           </div>
         </div>
 
-
+        <div style={{paddingTop: '30px'}}>
         <ReadCard 
           img={CalendarNextEvent7} 
           title={'241 - What is cultural humility?'}
           subtitle={'Cultural Humility '}
           text={'Donec a dapibus purus. Nunc mollis arcu quis volutpat mattis. Donec venenatis, libero et porta cursus, elit nulla vulputate erat, nec iaculis nisi nisi quis est.'}
         />
-
+</div>
         <div>
           <h1 className='title-resources' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Resources</h1>
         </div>

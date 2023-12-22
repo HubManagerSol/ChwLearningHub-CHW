@@ -22,7 +22,6 @@ import CalendarNextEvent from "../../../mg-2/CalendarNextEvent.png"
 
 
 const CareerPathwayOpportunities = () => {
-
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
 
@@ -110,7 +109,7 @@ const CareerPathwayOpportunities = () => {
               <div>
             </div>
           </div>
-          <div className='col-2'>
+          <div className='col-2' >
               <h5 style={{color:"#666"}}>Sort by</h5>
               <h6  style={{color:"#666", marginTop:"40px"}}>Newest to Oldest</h6>
               <h6  style={{color:"#666", marginTop:"10px"}}>Oldest to Newest</h6>
@@ -118,12 +117,14 @@ const CareerPathwayOpportunities = () => {
               <h6  style={{color:"#666", marginTop:"10px"}}>Z to A</h6>
           </div>
         </div>
+        <div style={{paddingTop: '30px'}}>
         <ReadCard 
           img={CalendarNextEvent} 
           title={'311 - What career opportunities are available for CHWs?'}
           subtitle={'Career Advancement Opportunities '}
           text={'311 - What career opportunities are available for CHWs?'}
         />
+        </div>
         <h1 className='title-resources' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Resources</h1>
         <div className="row">
           <div className="col-sm-4">

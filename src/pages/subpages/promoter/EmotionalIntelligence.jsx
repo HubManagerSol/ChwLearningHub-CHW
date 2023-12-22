@@ -122,13 +122,14 @@ const EmotionalIntelligence = () => {
           </div>
         </div>
 
+        <div style={{paddingTop: '30px'}}>
         <ReadCard 
           img={CalendarNextEvent11} 
           title={'261 - What is emotional intelligence?'}
           subtitle={'Emotional Intelligence'}
           text={'Donec a dapibus purus. Nunc mollis arcu quis volutpat mattis. Donec venenatis, libero et porta cursus, elit nulla vulputate erat, nec iaculis nisi nisi quis est.'}
         />
-
+        </div>
         <div>
           <h1 className='title-resources' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Resources</h1>
         </div>
