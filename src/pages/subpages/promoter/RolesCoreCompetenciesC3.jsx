@@ -112,13 +112,15 @@ const RolesCoreCompetenciesC3 = () => {
               <h6  style={{color:"#666", marginTop:"10px"}}>Z to A</h6>
           </div>
         </div>
+        <div style={{paddingTop: '30px'}}>
+
         <ReadCard 
           img={CalendarNextEvent4} 
           title={'121 - What is the C3 Project?'}
           subtitle={'Roles & Core Competencies C3'}
           text={'The Community Health Worker Core Consensus Project (C3 Project) is a collaborative work that seeks to expand the visibility and understanding of the great potential of CHWs to improve health, support community...'}
         />
-
+</div>
 
 {/* ---------------------------------------PONER CARD OVERVIEW */}
 

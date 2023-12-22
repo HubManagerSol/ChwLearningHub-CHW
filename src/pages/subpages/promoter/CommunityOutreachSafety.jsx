@@ -122,13 +122,14 @@ const CommunityOutreachSafety = () => {
           </div>
         </div>
 
-
+        <div style={{paddingTop: '30px'}}>
         <ReadCard 
           img={CalendarNextEvent6} 
           title={'2101 - What is community outreach?'}
           subtitle={'Community Outreach & Safety'}
           text={'Donec a dapibus purus. Nunc mollis arcu quis volutpat mattis. Donec venenatis, libero et porta cursus, elit nulla vulputate erat, nec iaculis nisi nisi quis est.'}
         />
+        </div>
 
         <div>
           <h1 className='title-resources' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Resources</h1>
