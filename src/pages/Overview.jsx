@@ -32,8 +32,6 @@ const Overview = () => {
             <p className='title-route'>Home - CHWs / Promotores / CHW/Promotor Philosophy / Introduction to CHWs/Ps</p>
             </div>
   <div>
-
-  {/* style={{ alignItems: 'center', textAlign: 'center' }} */}
     <div className='row'>
         <div className='col-11'>
         <div className="row">
@@ -342,7 +340,6 @@ To access the full version of the code of ethics for CHWs/Ps, click on the follo
       </div>
       </div>
       </div>
-
 <div className="title-h1-chws my-4 text-center" style={{paddingTop: "15px"}}>
   Explore what's inside
 </div>            
