@@ -22,7 +22,6 @@ import CalendarNextEvent from "../../../mg-2/CalendarNextEvent.png"
 
 
 const CareerPathwayOpportunities = () => {
-
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
 
@@ -126,7 +125,6 @@ const CareerPathwayOpportunities = () => {
           text={'311 - What career opportunities are available for CHWs?'}
         />
         </div>
-
         <h1 className='title-resources' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold'}}>Resources</h1>
         <div className="row">
           <div className="col-sm-4">
