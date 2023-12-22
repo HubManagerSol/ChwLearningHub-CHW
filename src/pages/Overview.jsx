@@ -239,7 +239,6 @@ const Overview = () => {
         </div> 
     </div>
 </div>
-
 <div style={{paddingBottom: '50px'}}>
 <div className='row'>
         <div className='col-md-4'>
@@ -273,7 +272,6 @@ const Overview = () => {
         </div>
     </div>
 </div>
-
 <div className='row' style={{width: '1196px'}}>
     <p className='p-overview'>
     In other occupations, CHWs may also provide direct services such as first aid, psychological intervention (one-on-one), crisis intervention, and diabetes or blood pressure screening.  
@@ -302,7 +300,6 @@ The code of ethics, however, is not legally binding but is used to encourage CHW
 To access the full version of the code of ethics for CHWs/Ps, click on the following link: <strong style={{color: '#067CBC'}}>CHWs Code of Ethics</strong> 
     </p>
 </div>
-
 <div style={{width:'1196px',marginLeft: '0px', backgroundColor:'#F9F9F9', borderRadius:'10px', top:'80px', left:'4%'}}>
       <h1 className='title-h1-chws' style={{ paddingTop: '35px', position: 'relative', top: 0, fontWeight: 'bold', marginLeft:"30px"}}>Other topics to explore</h1>
       <div className='row' style={{}}>
