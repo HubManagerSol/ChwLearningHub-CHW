@@ -16,7 +16,6 @@ import imgC2 from "../img/2card.svg";
 import imgC3 from "../img/3card.svg";
 import imgC4 from "../img/4cart.svg";
 import imgC5 from "../img/6card.svg";
-import imgC6 from "../img/7card.svg";
 
 const Overview = () => {
   return (
